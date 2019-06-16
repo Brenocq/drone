@@ -22,7 +22,7 @@
 #include <VP_Os/vp_os_signal.h>
 
 //Local project
-#include <Video/video_stage.h>
+//#include <Video/video_stage.h>
 #include <HIRAM/hello_hiram.h>
 
 static int32_t exit_ihm_program = 1;
@@ -73,7 +73,7 @@ C_RESULT signal_exit()
 /* Implementing thread table in which you add routines of your application and those provided by the SDK */
 BEGIN_THREAD_TABLE
   THREAD_TABLE_ENTRY( ardrone_control, 20 )
-//  THREAD_TABLE_ENTRY( navdata_update, 20 )
+  THREAD_TABLE_ENTRY( navdata_update, 20 )
 //  THREAD_TABLE_ENTRY( video_stage, 20 )
   THREAD_TABLE_ENTRY( hello_hiram , 20)
 END_THREAD_TABLE

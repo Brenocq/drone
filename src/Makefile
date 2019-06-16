@@ -6,6 +6,20 @@ BOLD   = \033[1m
 
 .PHONY: all
 
+MQTTLIB_A = paho-mqtt3a
+MQTTLIB_AS = paho-mqtt3as
+
+MQTTLIB_A_NAME = lib${MQTTLIB_A}.so.1.0
+MQTTLIB_A_TARGET = ${blddir}/${MQTTLIB_A_NAME}
+
+FLAGS_EXES = $(LDFLAGS) -I ${srcdir} ${START_GROUP} -lpthread -lrt -lssl -lcrypto ${END_GROUP} -L ${blddir}
+
+SAMPLE_FILES_A = MQTTAsync_subscribe MQTTAsync_publish
+ASYNC_SAMPLES = ${addprefix ${blddir}/samples/,${SAMPLE_FILES_A}}
+
+.PHONY: all clean
+
+
 all:
 	@echo "${GREEN}${BOLD}Making MQTT...${NC}"
 	@$(MAKE) -C ../lib/MQTT/paho.mqtt.c
@@ -21,3 +35,6 @@ $(MAKECMDGOALS):
 	@$(MAKE) -C ../lib/MQTT/paho.mqtt.c $(MAKECMDGOALS)
 	@$(MAKE) -C ../../ARDroneLib/Soft/Build USE_LINUX=yes $(MAKECMDGOALS)
 	@$(MAKE) -C drone_publish/Build USE_LINUX=yes $(MAKECMDGOALS)
+
+clean:
+	@$(MAKE) -C ../lib/MQTT/paho.mqtt.c clean

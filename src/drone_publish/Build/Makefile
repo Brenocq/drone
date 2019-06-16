@@ -1,4 +1,4 @@
-SDK_PATH:=$(shell pwd)/../../../../ARDroneLib
+SDK_PATH:=$(shell pwd)/../../../lib/SDK/ARDroneLib
 PC_TARGET=yes
 USE_LINUX=yes
 
@@ -16,7 +16,7 @@ else
    ARDRONE_TARGET_DIR=$(shell pwd)/../../Build/Debug
 endif
 
-TARGET=linux_sdk_hiram
+TARGET=drone_publish
 
 SRC_DIR:=$(shell pwd)/../Sources
 
