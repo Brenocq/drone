@@ -63,18 +63,38 @@ export GENERIC_BINARIES_SOURCE_ENTRYPOINTS
 export GENERIC_LIBRARY_SOURCE_DIR=$(GENERIC_BINARIES_SOURCE_DIR)
 
 
+## Begin MQTT variables
+CC ?= gcc
+MQTTfolder = ../../../../lib/MQTT/paho.mqtt.c/
+srcdir =${MQTTfolder}src
+blddir = ${MQTTfolder}Build/output
+
+MQTTLIB_A = paho-mqtt3a
+MQTTLIB_AS = paho-mqtt3as
+
+MQTTLIB_A_NAME = lib${MQTTLIB_A}.so.1.0
+MQTTLIB_A_TARGET = ${blddir}/${MQTTLIB_A_NAME}
+
+FLAGS_EXES = $(LDFLAGS) -I ${srcdir} ${START_GROUP} -lpthread -lrt -lssl -lcrypto ${END_GROUP} -L ${blddir}
+
+SAMPLE_FILES_A = MQTTAsync_subscribe MQTTAsync_publish
+ASYNC_SAMPLES = ${addprefix ${blddir}/samples/,${SAMPLE_FILES_A}}
+
+## End MQTT variables
+
 .PHONY: $(TARGET) build_libs
 
 all: build_libs $(TARGET)
+	@$(MAKE) -C $(SDK_PATH)/Soft/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
 
 $(TARGET):
 	@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
 	mv $(ARDRONE_TARGET_DIR)/ardrone_testing_tool $(TARGET)
 	mv $(TARGET) $(ARDRONE_TARGET_DIR)/
 
+${ASYNC_SAMPLES}: ${blddir}/samples/%: ${srcdir}/samples/%.c $(MQTTLIB_A_TARGET)
+	@echo arroba
+	${CC} -o ${ASYNC_SAMPLES} $< -l${MQTTLIB_AS} ${FLAGS_EXES}
+
 $(MAKECMDGOALS): build_libs
 	@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
-
-build_libs:
-	@$(MAKE) -C $(SDK_PATH)/Soft/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
-
