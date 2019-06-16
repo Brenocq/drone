@@ -24,9 +24,15 @@ ASYNC_SAMPLES = ${addprefix ${blddir}/samples/,${SAMPLE_FILES_A}}
 .PHONY: all clean
 
 all:
-	@echo "${GREEN}${BOLD}Making MQTT Makefile...${NC}"
+	@echo "${GREEN}${BOLD}Making MQTT...${NC}"
 	@$(MAKE) -C ../lib/MQTT/paho.mqtt.c
-	@echo "${GREEN}${BOLD}End of MQTT Makefile${NC}"
+	@echo "${GREEN}${BOLD}End of MQTT${NC}"
+	@echo "${GREEN}${BOLD}Making SDK...${NC}"
+	@$(MAKE) -C ../lib/SDK/ARDroneLib/Soft/Build USE_LINUX=yes
+	@echo "${GREEN}${BOLD}End of SDK${NC}"
+	@echo "${GREEN}Making target: drone_publish${NC}"
+	@$(MAKE) -C drone_publish/Build USE_LINUX=yes
+	@echo "${GREEN}End of target${NC}"
 	@make build
 
 build:
@@ -36,6 +42,11 @@ build:
 ${ASYNC_SAMPLES}: ${blddir}/samples/%: ${srcdir}/samples/%.c $(MQTTLIB_A_TARGET)
 	@echo arroba
 	${CC} -o ${ASYNC_SAMPLES} $< -l${MQTTLIB_AS} ${FLAGS_EXES}
+
+$(MAKECMDGOALS):
+	@$(MAKE) -C ../lib/MQTT/paho.mqtt.c $(MAKECMDGOALS)
+	@$(MAKE) -C ../../ARDroneLib/Soft/Build USE_LINUX=yes $(MAKECMDGOALS)
+	@$(MAKE) -C drone_publish/Build USE_LINUX=yes $(MAKECMDGOALS)
 
 clean:
 	@$(MAKE) -C ../lib/MQTT/paho.mqtt.c clean
