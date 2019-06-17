@@ -141,6 +141,7 @@ inline C_RESULT demo_navdata_client_process( const navdata_unpacked_t* const nav
 	const navdata_demo_t*nd = &navdata->navdata_demo;
 
 	strcat(PAYLOAD , "Control state :");
+	itoa(nd->ctrl_state , 10);
 	strcat(PAYLOAD , itoa(nd->ctrl_state , 10));
 
 	if ((rc = MQTTAsync_connect(client, &conn_opts)) != MQTTASYNC_SUCCESS)

@@ -1,6 +1,6 @@
 post_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/Video/post_stage.c.d: \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../Sources/Video/post_stage.c \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../Sources/Video/post_stage.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../Sources/Video/post_stage.c \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../Sources/Video/post_stage.h \
  /usr/include/stdio.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -30,8 +30,8 @@ post_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vlib_L
  /usr/include/i386-linux-gnu/bits/time.h /usr/include/xlocale.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h \
  /usr/include/i386-linux-gnu/bits/setjmp.h ../VP_Api/vp_api.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_version.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_version.h \
  /usr/include/string.h /usr/include/i386-linux-gnu/bits/string.h \
  /usr/include/i386-linux-gnu/bits/string2.h /usr/include/stdlib.h \
  /usr/include/i386-linux-gnu/bits/string3.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Common/video_encapsulation.h
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Common/video_encapsulation.h

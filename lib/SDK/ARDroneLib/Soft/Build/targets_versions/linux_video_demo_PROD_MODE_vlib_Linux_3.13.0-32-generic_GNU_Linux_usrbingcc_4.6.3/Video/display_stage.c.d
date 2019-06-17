@@ -1,7 +1,7 @@
 display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/Video/display_stage.c.d: \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../Sources/Video/display_stage.c \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../Sources/Video/display_stage.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../Sources/Video/display_stage.c \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../Sources/Video/display_stage.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage.h \
  ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h ../VP_Os/vp_os_print.h \
  /usr/include/stdio.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/predefs.h \
@@ -79,11 +79,11 @@ display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vli
  ../../FFMPEG/Includes/libavutil/pixfmt.h \
  ../VP_Api/vp_api_thread_helper.h ../VP_Os/vp_os_thread.h \
  ..//VP_Os/linux/vp_os_thread_dep.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_com_stage.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_com_stage.h \
  ../VP_Com/vp_com.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_tcp.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_tcp.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
  ../../FFMPEG/Includes/libavcodec/avcodec.h \
  ../../FFMPEG/Includes/libavutil/samplefmt.h \
  ../../FFMPEG/Includes/libavutil/cpu.h \
@@ -102,9 +102,9 @@ display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vli
  ../../VLIB/../VLIB/video_picture_defines.h \
  ../../VLIB/../VLIB/video_gob.h ../../VLIB/../VLIB/video_macroblock.h \
  ../../VLIB/../VLIB/P264/p264_common.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_merge_slices.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_merge_slices.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
  /usr/include/gtk-2.0/gtk/gtk.h /usr/include/gtk-2.0/gdk/gdk.h \
  /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h \
  /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
