@@ -1,5 +1,5 @@
 mobile_config.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/common/mobile_config.c.d: \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/common/mobile_config.c \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../Sources/common/mobile_config.c \
  ../VP_Api/vp_api_picture.h ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h \
  ../VP_Os/vp_os_rtmon.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
  /usr/include/stdint.h /usr/include/features.h \
@@ -89,7 +89,7 @@ mobile_config.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_v
  /usr/include/asm-generic/ioctls.h /usr/include/linux/ioctl.h \
  /usr/include/i386-linux-gnu/asm/ioctl.h /usr/include/asm-generic/ioctl.h \
  /usr/include/i386-linux-gnu/bits/ioctl-types.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/common/mobile_config.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../Sources/common/mobile_config.h \
  /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/environments.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
@@ -98,7 +98,7 @@ mobile_config.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_v
  /usr/include/i386-linux-gnu/bits/uio.h \
  /usr/include/i386-linux-gnu/bits/stat.h \
  /usr/include/i386-linux-gnu/bits/fcntl2.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/UI/ardrone_ini.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../Sources/UI/ardrone_ini.h \
  /usr/include/glib-2.0/glib.h /usr/include/glib-2.0/glib/galloca.h \
  /usr/include/glib-2.0/glib/gtypes.h \
  /usr/lib/i386-linux-gnu/glib-2.0/include/glibconfig.h \
@@ -197,27 +197,27 @@ mobile_config.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_v
  /usr/include/libxml2/libxml/relaxng.h \
  /usr/include/libxml2/libxml/xmlschemas.h \
  /usr/include/libxml2/libxml/xpath.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/UI/ardrone_input.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_api.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_common_config.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/UI/ardrone_input.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_api.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_common_config.h \
  ../ATcodec/ATcodec_api.h ../ATcodec/ATcodec.h \
  ../ATcodec/ATcodec_Memory.h ../ATcodec/ATcodec_Error.h \
  ../ATcodec/ATcodec_Tree.h ../ATcodec/ATcodec_Buffer.h \
  ../VP_Os/vp_os_malloc.h /usr/include/assert.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_common.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/generated_custom.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/vision_common.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/maths.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/matrices.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_keys.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/quaternions.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/led_animation.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config_keys.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_common.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/generated_custom.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/vision_common.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/maths.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/matrices.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_keys.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/quaternions.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/led_animation.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config_keys.h \
  ../../VLIB/../VLIB/video_codec.h ../../VLIB/../VLIB/video_controller.h \
  ../../VLIB/../VLIB/video_picture.h \
  ../../VLIB/../VLIB/video_picture_defines.h \
  ../../VLIB/../VLIB/video_gob.h ../../VLIB/../VLIB/video_macroblock.h \
  ../../VLIB/../VLIB/P264/p264_common.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/academy_common.h
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/academy_common.h

@@ -1,5 +1,5 @@
 ihm_vision.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/ihm/ihm_vision.c.d: \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/ihm_vision.c \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../Sources/ihm/ihm_vision.c \
  /usr/include/pthread.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -541,9 +541,9 @@ ihm_vision.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib
  /usr/include/gtk-2.0/gtk/gtkoptionmenu.h \
  /usr/include/gtk-2.0/gtk/gtkpreview.h \
  /usr/include/gtk-2.0/gtk/gtktipsquery.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_api.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_api.h \
  /usr/include/i386-linux-gnu/sys/time.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_common_config.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_common_config.h \
  ../ATcodec/ATcodec_api.h ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h \
  ../VP_Os/vp_os_rtmon.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
  /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wchar.h \
@@ -561,11 +561,11 @@ ihm_vision.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib
  /usr/include/i386-linux-gnu/bits/waitflags.h \
  /usr/include/i386-linux-gnu/bits/waitstatus.h /usr/include/alloca.h \
  /usr/include/i386-linux-gnu/bits/stdlib.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_common.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/generated_custom.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/vision_common.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/maths.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_common.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/generated_custom.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/vision_common.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/maths.h \
  /usr/include/math.h /usr/include/i386-linux-gnu/bits/huge_val.h \
  /usr/include/i386-linux-gnu/bits/huge_valf.h \
  /usr/include/i386-linux-gnu/bits/huge_vall.h \
@@ -574,11 +574,11 @@ ihm_vision.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib
  /usr/include/i386-linux-gnu/bits/mathdef.h \
  /usr/include/i386-linux-gnu/bits/mathcalls.h \
  /usr/include/i386-linux-gnu/bits/mathinline.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/matrices.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_keys.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/quaternions.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/led_animation.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config_keys.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/matrices.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_keys.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/quaternions.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/led_animation.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config_keys.h \
  ../../VLIB/../VLIB/video_codec.h ../../VLIB/../VLIB/video_controller.h \
  ../VP_Api/vp_api_picture.h ../../FFMPEG/Includes/libavutil/avutil.h \
  ../../FFMPEG/Includes/libavutil/common.h /usr/include/ctype.h \
@@ -599,29 +599,29 @@ ihm_vision.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib
  ../../VLIB/../VLIB/video_picture_defines.h \
  ../../VLIB/../VLIB/video_gob.h ../../VLIB/../VLIB/video_macroblock.h \
  ../../VLIB/../VLIB/P264/p264_common.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/ihm_vision.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../Sources/ihm/ihm_vision.h \
  /usr/include/gtk-2.0/gtk/gtk.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
  ../VP_Api/vp_api_thread_helper.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_general_navdata.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_academy_navdata.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_navdata_handler.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/ihm.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_general_navdata.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_academy_navdata.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_navdata_handler.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../Sources/ihm/ihm.h \
  /usr/include/gtk-2.0/gdk/gdkkeysyms.h \
  /usr/include/gtk-2.0/gdk/gdkkeysyms-compat.h ../VP_Os/vp_os_signal.h \
  ..//VP_Os/linux/vp_os_signal_dep.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/iniparser3.0b/src/iniparser.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/iniparser3.0b/src/dictionary.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/common/mobile_config.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/iniparser3.0b/src/iniparser.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/iniparser3.0b/src/dictionary.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../Sources/common/mobile_config.h \
  /usr/include/fcntl.h /usr/include/i386-linux-gnu/bits/fcntl.h \
  /usr/include/i386-linux-gnu/bits/uio.h \
  /usr/include/i386-linux-gnu/bits/stat.h \
  /usr/include/i386-linux-gnu/bits/fcntl2.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/UI/ardrone_ini.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../Sources/UI/ardrone_ini.h \
  /usr/include/libudev.h /usr/include/i386-linux-gnu/sys/stat.h \
  /usr/include/linux/joystick.h /usr/include/linux/input.h \
  /usr/include/i386-linux-gnu/sys/ioctl.h \
@@ -654,14 +654,14 @@ ihm_vision.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib
  /usr/include/libxml2/libxml/relaxng.h \
  /usr/include/libxml2/libxml/xmlschemas.h \
  /usr/include/libxml2/libxml/xpath.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/UI/ardrone_input.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/academy_common.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/ihm_stages_o_gtk.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/UI/ardrone_input.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/academy_common.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../Sources/ihm/ihm_stages_o_gtk.h \
  ../VP_Api/vp_api.h ../VP_Api/vp_api_config.h ../VP_Api/vp_api_stage.h \
  ../VP_Api/vp_api_supervisor.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
  ../../FFMPEG/Includes/libavcodec/avcodec.h \
  ../../FFMPEG/Includes/libavutil/samplefmt.h \
  ../../FFMPEG/Includes/libavutil/cpu.h \
@@ -675,22 +675,22 @@ ihm_vision.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib
  ../../FFMPEG/Includes/libavformat/version.h \
  ../../FFMPEG/Includes/libswscale/swscale.h \
  ../../VLIB/../VLIB/Stages/vlib_stage_decode.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool_configuration.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_ack.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_version.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool_configuration.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_ack.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_version.h \
  ../VP_Os/vp_os_print.h ../VP_Os/vp_os_delay.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Academy/academy_stage_recorder.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Academy/academy.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/utils/ardrone_ftp.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Academy/academy_stage_recorder.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Academy/academy.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/utils/ardrone_ftp.h \
  ../VP_Com/vp_com_socket.h ../VP_Com/vp_com.h /usr/include/ftw.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_encoded_recorder.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/utils/ardrone_video_encapsuler.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/video_encapsulation.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_encoded_recorder.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/utils/ardrone_video_encapsuler.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/video_encapsulation.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage.h \
  ../VP_Api/vp_api_error.h ../VP_Os/vp_os_error_handling.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_com_stage.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_tcp.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_merge_slices.h \
- /home/henrique/Documents/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_recorder_pipeline.h
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_com_stage.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_tcp.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_merge_slices.h \
+ /home/henrique/Documents/drone/lib/SDK/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_recorder_pipeline.h
