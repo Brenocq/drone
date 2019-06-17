@@ -7,9 +7,9 @@
 #include <string.h>
 #include "MQTTAsync.h"
 
-#define ADDRESS     "tcp://127.0.0.1:1883"
-#define CLIENTID    "ExampleClientPub"
-#define TOPIC       "test"
+#define ADDRESS     "tcp://postman.coudmqtt.com:16392"
+#define CLIENTID    "DRONE_PUB"
+#define TOPIC       "navdata"
 #define QOS         1
 #define TIMEOUT     10000L
 
@@ -109,6 +109,8 @@ inline C_RESULT demo_navdata_client_init( void* data )
 	conn_opts.onSuccess = onConnect;
 	conn_opts.onFailure = onConnectFailure;
 	conn_opts.context = client;
+	conn_opts.username = "grbucbfp"
+	conn_opts.password = "EjchUbjpJX71"
 
   return C_OK;
 }
