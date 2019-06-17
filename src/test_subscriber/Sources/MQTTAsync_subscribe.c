@@ -29,7 +29,7 @@
 #include <OsWrapper.h>
 #endif
 
-#define ADDRESS     "Server:Port"// "Server:Port"
+#define ADDRESS     "Server:Port "// "Server:Port"
 #define CLIENTID    "ExampleClientSub"
 #define TOPIC       "test"
 #define PAYLOAD     "Hello World!"
