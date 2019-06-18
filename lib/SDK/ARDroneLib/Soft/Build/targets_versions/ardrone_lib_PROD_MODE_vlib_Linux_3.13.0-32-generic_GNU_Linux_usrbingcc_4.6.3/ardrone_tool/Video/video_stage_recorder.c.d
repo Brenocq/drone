@@ -66,9 +66,10 @@ video_stage_recorder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_v
  ../../FFMPEG/Includes/libavutil/rational.h \
  ../../FFMPEG/Includes/libavutil/intfloat_readwrite.h \
  ../../FFMPEG/Includes/libavutil/log.h \
- ../../FFMPEG/Includes/libavutil/pixfmt.h ../..//Soft/Common/config.h \
- ../..//Soft/Common/generated_custom.h \
- ../..//Soft/Lib/ardrone_tool/Video/video_stage_recorder.h \
+ ../../FFMPEG/Includes/libavutil/pixfmt.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/config.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/generated_custom.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_recorder.h \
  ../VP_Api/vp_api.h ../VP_Os/vp_os_signal.h \
  ..//VP_Os/linux/vp_os_signal_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/i386-linux-gnu/bits/sched.h \

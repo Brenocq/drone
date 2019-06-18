@@ -36,7 +36,8 @@ matrices.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.
  /usr/include/i386-linux-gnu/bits/wchar.h ..//VP_Os/linux/vp_os_serial.h \
  /usr/include/termios.h /usr/include/i386-linux-gnu/bits/termios.h \
  /usr/include/i386-linux-gnu/sys/ttydefaults.h ../VP_Os/linux/intrin.h \
- ../..//Soft/Lib/Maths/matrices.h ../..//Soft/Lib/Maths/maths.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/Maths/matrices.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/Maths/maths.h \
  /usr/include/math.h /usr/include/i386-linux-gnu/bits/huge_val.h \
  /usr/include/i386-linux-gnu/bits/huge_valf.h \
  /usr/include/i386-linux-gnu/bits/huge_vall.h \

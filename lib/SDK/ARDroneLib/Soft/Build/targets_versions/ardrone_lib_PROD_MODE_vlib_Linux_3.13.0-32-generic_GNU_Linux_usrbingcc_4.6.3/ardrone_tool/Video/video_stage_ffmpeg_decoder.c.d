@@ -37,7 +37,7 @@ video_stage_ffmpeg_decoder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_
  /usr/include/i386-linux-gnu/bits/sys_errlist.h \
  /usr/include/i386-linux-gnu/bits/stdio.h \
  /usr/include/i386-linux-gnu/bits/stdio2.h \
- ../..//Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
  ../VP_Api/vp_api.h ../VP_Os/vp_os_signal.h \
  ..//VP_Os/linux/vp_os_signal_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/i386-linux-gnu/bits/sched.h \
@@ -83,9 +83,10 @@ video_stage_ffmpeg_decoder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_
  ../../FFMPEG/Includes/libavutil/common.h \
  ../../FFMPEG/Includes/libavutil/log.h \
  ../../FFMPEG/Includes/libavformat/version.h \
- ../../FFMPEG/Includes/libswscale/swscale.h ../..//Soft/Lib/Maths/time.h \
+ ../../FFMPEG/Includes/libswscale/swscale.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/Maths/time.h \
  /usr/include/i386-linux-gnu/sys/time.h \
- ../..//Soft/Common/video_encapsulation.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/video_encapsulation.h \
  /usr/include/i386-linux-gnu/sys/stat.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \

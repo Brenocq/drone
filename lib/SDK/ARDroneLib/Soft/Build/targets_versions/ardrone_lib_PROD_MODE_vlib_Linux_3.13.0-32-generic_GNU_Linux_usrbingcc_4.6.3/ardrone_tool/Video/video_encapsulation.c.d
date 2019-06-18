@@ -20,4 +20,4 @@ video_encapsulation.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vl
  /usr/include/i386-linux-gnu/bits/wchar.h ..//VP_Os/linux/vp_os_serial.h \
  /usr/include/termios.h /usr/include/i386-linux-gnu/bits/termios.h \
  /usr/include/i386-linux-gnu/sys/ttydefaults.h ../VP_Os/linux/intrin.h \
- ../..//Soft/Common/video_encapsulation.h
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/video_encapsulation.h

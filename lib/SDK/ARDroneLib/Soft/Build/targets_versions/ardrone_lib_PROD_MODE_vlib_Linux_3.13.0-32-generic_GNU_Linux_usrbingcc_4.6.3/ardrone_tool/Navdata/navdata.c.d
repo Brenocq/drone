@@ -35,19 +35,22 @@ navdata.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.1
  /usr/include/i386-linux-gnu/bits/sys_errlist.h \
  /usr/include/i386-linux-gnu/bits/stdio.h \
  /usr/include/i386-linux-gnu/bits/stdio2.h \
- ../..//Soft/Common/ardrone_api.h /usr/include/i386-linux-gnu/sys/time.h \
- ../..//Soft/Common/ardrone_common_config.h ../ATcodec/ATcodec_api.h \
- ../VP_Os/vp_os_thread.h ..//VP_Os/linux/vp_os_thread_dep.h \
- /usr/include/pthread.h /usr/include/sched.h \
- /usr/include/i386-linux-gnu/bits/sched.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/ardrone_api.h \
+ /usr/include/i386-linux-gnu/sys/time.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/ardrone_common_config.h \
+ ../ATcodec/ATcodec_api.h ../VP_Os/vp_os_thread.h \
+ ..//VP_Os/linux/vp_os_thread_dep.h /usr/include/pthread.h \
+ /usr/include/sched.h /usr/include/i386-linux-gnu/bits/sched.h \
  /usr/include/i386-linux-gnu/bits/timex.h \
  /usr/include/i386-linux-gnu/bits/setjmp.h ../ATcodec/ATcodec.h \
  ../ATcodec/ATcodec_Memory.h ../ATcodec/ATcodec_Error.h \
  ../ATcodec/ATcodec_Tree.h ../ATcodec/ATcodec_Buffer.h \
- ../..//Soft/Common/navdata_common.h ../..//Soft/Common/config.h \
- ../..//Soft/Common/generated_custom.h ../..//Soft/Common/vision_common.h \
- ../..//Soft/Lib/Maths/maths.h /usr/include/math.h \
- /usr/include/i386-linux-gnu/bits/huge_val.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/navdata_common.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/config.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/generated_custom.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/vision_common.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/Maths/maths.h \
+ /usr/include/math.h /usr/include/i386-linux-gnu/bits/huge_val.h \
  /usr/include/i386-linux-gnu/bits/huge_valf.h \
  /usr/include/i386-linux-gnu/bits/huge_vall.h \
  /usr/include/i386-linux-gnu/bits/inf.h \
@@ -56,11 +59,13 @@ navdata.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.1
  /usr/include/i386-linux-gnu/bits/mathcalls.h \
  /usr/include/i386-linux-gnu/bits/mathinline.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/float.h \
- ../..//Soft/Lib/Maths/matrices.h ../..//Soft/Common/navdata_keys.h \
- ../..//Soft/Lib/Maths/quaternions.h ../..//Soft/Common/led_animation.h \
- ../..//Soft/Common/config_keys.h ../../VLIB/video_codec.h \
- ../../VLIB/video_controller.h ../VP_Api/vp_api_picture.h \
- ../../FFMPEG/Includes/libavutil/avutil.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/Maths/matrices.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/navdata_keys.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/Maths/quaternions.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/led_animation.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/config_keys.h \
+ ../../VLIB/video_codec.h ../../VLIB/video_controller.h \
+ ../VP_Api/vp_api_picture.h ../../FFMPEG/Includes/libavutil/avutil.h \
  ../../FFMPEG/Includes/libavutil/common.h /usr/include/ctype.h \
  /usr/include/errno.h /usr/include/i386-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/i386-linux-gnu/asm/errno.h \

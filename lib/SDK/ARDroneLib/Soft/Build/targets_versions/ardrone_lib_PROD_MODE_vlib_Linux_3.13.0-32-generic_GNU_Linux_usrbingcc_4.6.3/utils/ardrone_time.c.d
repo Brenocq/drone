@@ -29,5 +29,5 @@ ardrone_time.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linu
  /usr/include/i386-linux-gnu/bits/wchar.h ..//VP_Os/linux/vp_os_serial.h \
  /usr/include/termios.h /usr/include/i386-linux-gnu/bits/termios.h \
  /usr/include/i386-linux-gnu/sys/ttydefaults.h ../VP_Os/linux/intrin.h \
- ../..//Soft/Lib/utils/ardrone_time.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/utils/ardrone_time.h \
  /usr/include/i386-linux-gnu/sys/time.h

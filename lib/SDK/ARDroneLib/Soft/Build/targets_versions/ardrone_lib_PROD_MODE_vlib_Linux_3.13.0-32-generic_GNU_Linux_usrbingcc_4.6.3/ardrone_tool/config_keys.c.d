@@ -11,7 +11,8 @@ config_keys.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux
  /usr/include/i386-linux-gnu/bits/typesizes.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/i386-linux-gnu/bits/unistd.h ../..//Soft/Lib/Maths/maths.h \
+ /usr/include/i386-linux-gnu/bits/unistd.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/Maths/maths.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h ..//VP_Os/linux/vp_os_serial.h \
@@ -26,7 +27,8 @@ config_keys.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux
  /usr/include/i386-linux-gnu/bits/mathcalls.h \
  /usr/include/i386-linux-gnu/bits/mathinline.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/float.h \
- ../..//Soft/Lib/Maths/matrices.h ../..//Soft/Common/config_keys.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/Maths/matrices.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/config_keys.h \
  ../../VLIB/video_codec.h ../../VLIB/video_controller.h \
  ../VP_Api/vp_api_picture.h ../../FFMPEG/Includes/libavutil/avutil.h \
  ../../FFMPEG/Includes/libavutil/common.h /usr/include/ctype.h \

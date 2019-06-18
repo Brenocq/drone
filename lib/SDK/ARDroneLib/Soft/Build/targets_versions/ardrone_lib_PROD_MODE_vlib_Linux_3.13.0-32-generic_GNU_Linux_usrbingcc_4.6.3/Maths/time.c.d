@@ -1,4 +1,5 @@
-time.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/Maths/time.c.d: ../..//Soft/Lib/Maths/time.c ../..//Soft/Lib/Maths/time.h \
+time.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/Maths/time.c.d: ../..//Soft/Lib/Maths/time.c \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Lib/Maths/time.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \

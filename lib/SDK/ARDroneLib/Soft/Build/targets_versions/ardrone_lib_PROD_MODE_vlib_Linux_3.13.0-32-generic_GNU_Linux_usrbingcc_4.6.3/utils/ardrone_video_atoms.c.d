@@ -28,8 +28,8 @@ ardrone_video_atoms.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vl
  /usr/include/i386-linux-gnu/bits/sched.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h \
  /usr/include/i386-linux-gnu/bits/setjmp.h \
- ../..//Soft/Common/video_encapsulation.h /usr/include/dirent.h \
- /usr/include/i386-linux-gnu/bits/dirent.h \
+ /home/henrique/Documents/drone/src/drone_publish/Build/../../../lib/SDK/ARDroneLib/Soft/Common/video_encapsulation.h \
+ /usr/include/dirent.h /usr/include/i386-linux-gnu/bits/dirent.h \
  /usr/include/i386-linux-gnu/bits/posix1_lim.h \
  /usr/include/i386-linux-gnu/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/string.h /usr/include/i386-linux-gnu/bits/string.h \
