@@ -31,7 +31,7 @@ all:
 	@$(MAKE) ${DRONE_SAMPLES}
 	@echo "${GREEN}${BOLD}End of build process${NC}"
 
-init:
+export:
 	@echo export LD_LIBRARY_PATH=$(subst src/test_subscriber/Build,lib/MQTT/paho.mqtt.c/build/output,$(shell pwd)) >> ~/.bashrc
 	@echo "${GREEN}${BOLD}Added export files to bashrc${NC}"
 
