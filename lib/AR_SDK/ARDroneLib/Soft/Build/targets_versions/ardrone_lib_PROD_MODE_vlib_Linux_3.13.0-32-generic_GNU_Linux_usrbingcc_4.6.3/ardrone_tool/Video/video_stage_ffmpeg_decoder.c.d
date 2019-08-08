@@ -7,25 +7,20 @@ video_stage_ffmpeg_decoder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_
  /usr/include/i386-linux-gnu/gnu/stubs.h \
  /usr/include/i386-linux-gnu/gnu/stubs-32.h /usr/include/string.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h /usr/include/xlocale.h \
- /usr/include/i386-linux-gnu/bits/string.h \
- /usr/include/i386-linux-gnu/bits/string2.h /usr/include/endian.h \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/bits/waitflags.h \
+ /usr/include/i386-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
  /usr/include/i386-linux-gnu/bits/endian.h \
  /usr/include/i386-linux-gnu/bits/byteswap.h \
+ /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/i386-linux-gnu/bits/types.h \
- /usr/include/i386-linux-gnu/bits/typesizes.h /usr/include/stdlib.h \
- /usr/include/i386-linux-gnu/bits/string3.h \
- /usr/include/i386-linux-gnu/bits/waitflags.h \
- /usr/include/i386-linux-gnu/bits/waitstatus.h \
- /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/i386-linux-gnu/bits/typesizes.h /usr/include/time.h \
  /usr/include/i386-linux-gnu/sys/select.h \
  /usr/include/i386-linux-gnu/bits/select.h \
  /usr/include/i386-linux-gnu/bits/sigset.h \
  /usr/include/i386-linux-gnu/bits/time.h \
- /usr/include/i386-linux-gnu/bits/select2.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/i386-linux-gnu/bits/stdlib.h ../VP_Os/vp_os_types.h \
- ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
+ ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h ..//VP_Os/linux/vp_os_serial.h \
  /usr/include/termios.h /usr/include/i386-linux-gnu/bits/termios.h \
@@ -35,9 +30,7 @@ video_stage_ffmpeg_decoder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
+ ../..//Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
  ../VP_Api/vp_api.h ../VP_Os/vp_os_signal.h \
  ..//VP_Os/linux/vp_os_signal_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/i386-linux-gnu/bits/sched.h \
@@ -63,7 +56,6 @@ video_stage_ffmpeg_decoder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_
  /usr/include/i386-linux-gnu/bits/nan.h \
  /usr/include/i386-linux-gnu/bits/mathdef.h \
  /usr/include/i386-linux-gnu/bits/mathcalls.h \
- /usr/include/i386-linux-gnu/bits/mathinline.h \
  ../../FFMPEG/Includes/libavutil/attributes.h \
  ../../FFMPEG/Includes/libavutil/avconfig.h \
  ../../FFMPEG/Includes/libavutil/mem.h \
@@ -83,11 +75,9 @@ video_stage_ffmpeg_decoder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_
  ../../FFMPEG/Includes/libavutil/common.h \
  ../../FFMPEG/Includes/libavutil/log.h \
  ../../FFMPEG/Includes/libavformat/version.h \
- ../../FFMPEG/Includes/libswscale/swscale.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/Maths/time.h \
+ ../../FFMPEG/Includes/libswscale/swscale.h ../..//Soft/Lib/Maths/time.h \
  /usr/include/i386-linux-gnu/sys/time.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/video_encapsulation.h \
+ ../..//Soft/Common/video_encapsulation.h \
  /usr/include/i386-linux-gnu/sys/stat.h \
  /usr/include/i386-linux-gnu/bits/stat.h /usr/include/fcntl.h \
- /usr/include/i386-linux-gnu/bits/fcntl.h \
- /usr/include/i386-linux-gnu/bits/fcntl2.h
+ /usr/include/i386-linux-gnu/bits/fcntl.h

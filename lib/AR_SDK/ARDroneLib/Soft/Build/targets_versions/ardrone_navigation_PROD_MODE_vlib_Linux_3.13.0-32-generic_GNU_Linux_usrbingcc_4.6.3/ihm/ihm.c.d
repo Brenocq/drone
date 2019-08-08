@@ -1,5 +1,4 @@
-ihm.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/ihm/ihm.c.d: \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/ihm.c \
+ihm.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/ihm/ihm.c.d: /home/hiram/drone/src/Navigation/Build/../Sources/ihm/ihm.c \
  /usr/include/stdio.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -12,9 +11,7 @@ ihm.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h /usr/include/stdlib.h \
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/stdlib.h \
  /usr/include/i386-linux-gnu/bits/waitflags.h \
  /usr/include/i386-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
  /usr/include/i386-linux-gnu/bits/endian.h \
@@ -24,24 +21,20 @@ ihm.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_
  /usr/include/i386-linux-gnu/bits/select.h \
  /usr/include/i386-linux-gnu/bits/sigset.h \
  /usr/include/i386-linux-gnu/bits/time.h \
- /usr/include/i386-linux-gnu/bits/select2.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/i386-linux-gnu/bits/stdlib.h \
  /usr/include/i386-linux-gnu/sys/fcntl.h /usr/include/fcntl.h \
  /usr/include/i386-linux-gnu/bits/fcntl.h \
- /usr/include/i386-linux-gnu/bits/stat.h \
- /usr/include/i386-linux-gnu/bits/fcntl2.h /usr/include/termios.h \
+ /usr/include/i386-linux-gnu/bits/stat.h /usr/include/termios.h \
  /usr/include/i386-linux-gnu/bits/termios.h \
  /usr/include/i386-linux-gnu/sys/ttydefaults.h /usr/include/xlocale.h \
  /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/environments.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/i386-linux-gnu/bits/unistd.h /usr/include/errno.h \
- /usr/include/i386-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/i386-linux-gnu/asm/errno.h /usr/include/asm-generic/errno.h \
- /usr/include/asm-generic/errno-base.h /usr/include/curses.h \
- /usr/include/ncurses_dll.h \
+ /usr/include/errno.h /usr/include/i386-linux-gnu/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/i386-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/curses.h /usr/include/ncurses_dll.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdbool.h /usr/include/unctrl.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/i386-linux-gnu/bits/sched.h \
@@ -558,12 +551,10 @@ ihm.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_
  /usr/include/gtk-2.0/gtk/gtktipsquery.h /usr/include/SDL/SDL.h \
  /usr/include/SDL/SDL_main.h /usr/include/SDL/SDL_stdinc.h \
  /usr/include/SDL/SDL_config.h /usr/include/SDL/SDL_platform.h \
- /usr/include/string.h /usr/include/i386-linux-gnu/bits/string.h \
- /usr/include/i386-linux-gnu/bits/string2.h \
- /usr/include/i386-linux-gnu/bits/string3.h /usr/include/strings.h \
- /usr/include/inttypes.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
- /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wchar.h \
- /usr/include/ctype.h /usr/include/iconv.h /usr/include/SDL/begin_code.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/inttypes.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/include/i386-linux-gnu/bits/wchar.h /usr/include/ctype.h \
+ /usr/include/iconv.h /usr/include/SDL/begin_code.h \
  /usr/include/SDL/close_code.h /usr/include/SDL/SDL_audio.h \
  /usr/include/SDL/SDL_error.h /usr/include/SDL/SDL_endian.h \
  /usr/include/SDL/SDL_mutex.h /usr/include/SDL/SDL_thread.h \
@@ -588,8 +579,7 @@ ihm.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_
  /usr/include/i386-linux-gnu/bits/inf.h \
  /usr/include/i386-linux-gnu/bits/nan.h \
  /usr/include/i386-linux-gnu/bits/mathdef.h \
- /usr/include/i386-linux-gnu/bits/mathcalls.h \
- /usr/include/i386-linux-gnu/bits/mathinline.h /usr/include/netdb.h \
+ /usr/include/i386-linux-gnu/bits/mathcalls.h /usr/include/netdb.h \
  /usr/include/netinet/in.h /usr/include/i386-linux-gnu/sys/socket.h \
  /usr/include/i386-linux-gnu/sys/uio.h \
  /usr/include/i386-linux-gnu/bits/uio.h \
@@ -598,33 +588,32 @@ ihm.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_
  /usr/include/i386-linux-gnu/asm/socket.h \
  /usr/include/asm-generic/socket.h \
  /usr/include/i386-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/i386-linux-gnu/bits/socket2.h \
- /usr/include/i386-linux-gnu/bits/in.h /usr/include/rpc/netdb.h \
- /usr/include/i386-linux-gnu/bits/netdb.h /usr/include/net/ethernet.h \
- /usr/include/linux/if_ether.h /usr/include/i386-linux-gnu/sys/time.h \
- /usr/include/net/if_arp.h /usr/include/netinet/if_ether.h \
- /usr/include/net/if.h /usr/include/wireless.h ../VP_Os/vp_os_malloc.h \
- /usr/include/assert.h ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h \
- ../VP_Os/vp_os_rtmon.h ..//VP_Os/linux/vp_os_serial.h \
- ../VP_Os/linux/intrin.h ../VP_Os/vp_os_print.h ../VP_Os/vp_os_signal.h \
+ /usr/include/asm-generic/sockios.h /usr/include/i386-linux-gnu/bits/in.h \
+ /usr/include/rpc/netdb.h /usr/include/i386-linux-gnu/bits/netdb.h \
+ /usr/include/net/ethernet.h /usr/include/linux/if_ether.h \
+ /usr/include/i386-linux-gnu/sys/time.h /usr/include/net/if_arp.h \
+ /usr/include/netinet/if_ether.h /usr/include/net/if.h \
+ /usr/include/wireless.h ../VP_Os/vp_os_malloc.h /usr/include/assert.h \
+ ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
+ ..//VP_Os/linux/vp_os_serial.h ../VP_Os/linux/intrin.h \
+ ../VP_Os/vp_os_print.h ../VP_Os/vp_os_signal.h \
  ..//VP_Os/linux/vp_os_signal_dep.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_api.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/ardrone_common_config.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/ardrone_api.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/ardrone_common_config.h \
  ../ATcodec/ATcodec_api.h ../VP_Os/vp_os_thread.h \
  ..//VP_Os/linux/vp_os_thread_dep.h ../ATcodec/ATcodec.h \
  ../ATcodec/ATcodec_Memory.h ../ATcodec/ATcodec_Error.h \
  ../ATcodec/ATcodec_Tree.h ../ATcodec/ATcodec_Buffer.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_common.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/generated_custom.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/vision_common.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/maths.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/matrices.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/navdata_keys.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/Maths/quaternions.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/led_animation.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config_keys.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/navdata_common.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/config.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/generated_custom.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/vision_common.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/Maths/maths.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/Maths/matrices.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/navdata_keys.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/Maths/quaternions.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/led_animation.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/config_keys.h \
  ../../VLIB/../VLIB/video_codec.h ../../VLIB/../VLIB/video_controller.h \
  ../VP_Api/vp_api_picture.h ../../FFMPEG/Includes/libavutil/avutil.h \
  ../../FFMPEG/Includes/libavutil/common.h \
@@ -642,27 +631,27 @@ ihm.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_
  ../../VLIB/../VLIB/video_picture_defines.h \
  ../../VLIB/../VLIB/video_gob.h ../../VLIB/../VLIB/video_macroblock.h \
  ../../VLIB/../VLIB/P264/p264_common.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool_configuration.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool_configuration.h \
  ../VP_Api/vp_api_thread_helper.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_ack.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/iniparser3.0b/src/iniparser.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/iniparser3.0b/src/dictionary.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Academy/academy.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/academy_common.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/utils/ardrone_ftp.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_ack.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/iniparser3.0b/src/iniparser.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/iniparser3.0b/src/dictionary.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Academy/academy.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/academy_common.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/utils/ardrone_ftp.h \
  ../VP_Com/vp_com_socket.h ../VP_Com/vp_com.h ../VP_Os/vp_os_delay.h \
  /usr/include/dirent.h /usr/include/i386-linux-gnu/bits/dirent.h \
  /usr/include/ftw.h /usr/include/i386-linux-gnu/sys/stat.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_academy_navdata.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_general_navdata.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_navdata_handler.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/UI/ardrone_ini.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_academy_navdata.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_general_navdata.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_navdata_handler.h \
+ /home/hiram/drone/src/Navigation/Build/../Sources/UI/ardrone_ini.h \
  /usr/include/libudev.h /usr/include/linux/joystick.h \
  /usr/include/linux/input.h /usr/include/libxml2/libxml/encoding.h \
  /usr/include/libxml2/libxml/xmlversion.h \
@@ -687,14 +676,14 @@ ihm.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_
  /usr/include/libxml2/libxml/relaxng.h \
  /usr/include/libxml2/libxml/xmlschemas.h \
  /usr/include/libxml2/libxml/xpath.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/UI/ardrone_input.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/ihm_config.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/ihm_raw_navdata.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/common/common.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/common/mobile_config.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/ihm.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/UI/ardrone_input.h \
+ /home/hiram/drone/src/Navigation/Build/../Sources/ihm/ihm_config.h \
+ /home/hiram/drone/src/Navigation/Build/../Sources/ihm/ihm_raw_navdata.h \
+ /home/hiram/drone/src/Navigation/Build/../Sources/common/common.h \
+ /home/hiram/drone/src/Navigation/Build/../Sources/common/mobile_config.h \
+ /home/hiram/drone/src/Navigation/Build/../Sources/ihm/ihm.h \
  /usr/include/gtk-2.0/gdk/gdkkeysyms.h \
  /usr/include/gtk-2.0/gdk/gdkkeysyms-compat.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/view_drone_attitude.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/ihm/ihm_vision.h \
+ /home/hiram/drone/src/Navigation/Build/../Sources/ihm/view_drone_attitude.h \
+ /home/hiram/drone/src/Navigation/Build/../Sources/ihm/ihm_vision.h \
  /usr/include/gtk-2.0/gtk/gtk.h

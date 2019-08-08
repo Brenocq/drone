@@ -1,5 +1,4 @@
-time.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/Maths/time.c.d: ../..//Soft/Lib/Maths/time.c \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/Maths/time.h \
+time.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/Maths/time.c.d: ../..//Soft/Lib/Maths/time.c ../..//Soft/Lib/Maths/time.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
@@ -17,5 +16,4 @@ time.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0
  /usr/include/i386-linux-gnu/bits/time.h \
  /usr/include/i386-linux-gnu/sys/select.h \
  /usr/include/i386-linux-gnu/bits/select.h \
- /usr/include/i386-linux-gnu/bits/sigset.h \
- /usr/include/i386-linux-gnu/bits/select2.h
+ /usr/include/i386-linux-gnu/bits/sigset.h

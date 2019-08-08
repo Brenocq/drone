@@ -14,45 +14,36 @@ ardrone_tool.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linu
  /usr/include/i386-linux-gnu/sys/ttydefaults.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h ../VP_Os/linux/intrin.h \
  ../VP_Os/vp_os_malloc.h /usr/include/assert.h /usr/include/string.h \
- /usr/include/xlocale.h /usr/include/i386-linux-gnu/bits/string.h \
- /usr/include/i386-linux-gnu/bits/string2.h /usr/include/endian.h \
- /usr/include/i386-linux-gnu/bits/endian.h \
- /usr/include/i386-linux-gnu/bits/byteswap.h /usr/include/stdlib.h \
- /usr/include/i386-linux-gnu/bits/string3.h \
+ /usr/include/xlocale.h /usr/include/stdlib.h \
  /usr/include/i386-linux-gnu/bits/waitflags.h \
- /usr/include/i386-linux-gnu/bits/waitstatus.h \
+ /usr/include/i386-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/i386-linux-gnu/bits/endian.h \
+ /usr/include/i386-linux-gnu/bits/byteswap.h \
  /usr/include/i386-linux-gnu/sys/types.h /usr/include/time.h \
  /usr/include/i386-linux-gnu/sys/select.h \
  /usr/include/i386-linux-gnu/bits/select.h \
  /usr/include/i386-linux-gnu/bits/sigset.h \
  /usr/include/i386-linux-gnu/bits/time.h \
- /usr/include/i386-linux-gnu/bits/select2.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
- /usr/include/i386-linux-gnu/bits/stdlib.h ../VP_Os/vp_os_print.h \
- /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
- /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
+ ../VP_Os/vp_os_print.h /usr/include/stdio.h /usr/include/libio.h \
+ /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h \
  ../VP_Api/vp_api_thread_helper.h ../VP_Os/vp_os_thread.h \
  ..//VP_Os/linux/vp_os_thread_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/i386-linux-gnu/bits/sched.h \
  /usr/include/i386-linux-gnu/bits/timex.h \
  /usr/include/i386-linux-gnu/bits/setjmp.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/ardrone_api.h \
- /usr/include/i386-linux-gnu/sys/time.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/ardrone_common_config.h \
- ../ATcodec/ATcodec_api.h ../ATcodec/ATcodec.h \
- ../ATcodec/ATcodec_Memory.h ../ATcodec/ATcodec_Error.h \
- ../ATcodec/ATcodec_Tree.h ../ATcodec/ATcodec_Buffer.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/navdata_common.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/config.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/generated_custom.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/vision_common.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/Maths/maths.h \
+ ../..//Soft/Lib/ardrone_tool/ardrone_tool.h \
+ ../..//Soft/Common/ardrone_api.h /usr/include/i386-linux-gnu/sys/time.h \
+ ../..//Soft/Common/ardrone_common_config.h ../ATcodec/ATcodec_api.h \
+ ../ATcodec/ATcodec.h ../ATcodec/ATcodec_Memory.h \
+ ../ATcodec/ATcodec_Error.h ../ATcodec/ATcodec_Tree.h \
+ ../ATcodec/ATcodec_Buffer.h ../..//Soft/Common/navdata_common.h \
+ ../..//Soft/Common/config.h ../..//Soft/Common/generated_custom.h \
+ ../..//Soft/Common/vision_common.h ../..//Soft/Lib/Maths/maths.h \
  /usr/include/math.h /usr/include/i386-linux-gnu/bits/huge_val.h \
  /usr/include/i386-linux-gnu/bits/huge_valf.h \
  /usr/include/i386-linux-gnu/bits/huge_vall.h \
@@ -60,15 +51,12 @@ ardrone_tool.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linu
  /usr/include/i386-linux-gnu/bits/nan.h \
  /usr/include/i386-linux-gnu/bits/mathdef.h \
  /usr/include/i386-linux-gnu/bits/mathcalls.h \
- /usr/include/i386-linux-gnu/bits/mathinline.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/float.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/Maths/matrices.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/navdata_keys.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/Maths/quaternions.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/led_animation.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/config_keys.h \
- ../../VLIB/video_codec.h ../../VLIB/video_controller.h \
- ../VP_Api/vp_api_picture.h ../../FFMPEG/Includes/libavutil/avutil.h \
+ ../..//Soft/Lib/Maths/matrices.h ../..//Soft/Common/navdata_keys.h \
+ ../..//Soft/Lib/Maths/quaternions.h ../..//Soft/Common/led_animation.h \
+ ../..//Soft/Common/config_keys.h ../../VLIB/video_codec.h \
+ ../../VLIB/video_controller.h ../VP_Api/vp_api_picture.h \
+ ../../FFMPEG/Includes/libavutil/avutil.h \
  ../../FFMPEG/Includes/libavutil/common.h /usr/include/ctype.h \
  /usr/include/errno.h /usr/include/i386-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/i386-linux-gnu/asm/errno.h \
@@ -92,38 +80,37 @@ ardrone_tool.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linu
  ../../FFMPEG/Includes/libavutil/pixfmt.h ../../VLIB/video_picture.h \
  ../../VLIB/video_picture_defines.h ../../VLIB/video_gob.h \
  ../../VLIB/video_macroblock.h ../../VLIB/P264/p264_common.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/academy_common.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/ardrone_tool_configuration.h \
+ ../..//Soft/Common/academy_common.h \
+ ../..//Soft/Lib/ardrone_tool/ardrone_tool_configuration.h \
  ../VP_Os/vp_os_signal.h ..//VP_Os/linux/vp_os_signal_dep.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_ack.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/iniparser3.0b/src/iniparser.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/iniparser3.0b/src/dictionary.h \
- /usr/include/unistd.h /usr/include/i386-linux-gnu/bits/posix_opt.h \
+ ../..//Soft/Lib/ardrone_tool/Control/ardrone_control_ack.h \
+ ../..//Soft/Lib/ardrone_tool/Control/ardrone_control.h \
+ ../..//Soft/Lib/ardrone_tool/Control/ardrone_control_configuration.h \
+ ../..//Soft/Lib/iniparser3.0b/src/iniparser.h \
+ ../..//Soft/Lib/iniparser3.0b/src/dictionary.h /usr/include/unistd.h \
+ /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/environments.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/i386-linux-gnu/bits/unistd.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_general_navdata.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Navdata/ardrone_academy_navdata.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_navdata_handler.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Academy/academy_download.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Academy/academy.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/utils/ardrone_ftp.h \
- ../VP_Com/vp_com_socket.h ../VP_Com/vp_com.h /usr/include/dirent.h \
+ ../..//Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
+ ../..//Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
+ ../..//Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.h \
+ ../..//Soft/Lib/ardrone_tool/Navdata/ardrone_general_navdata.h \
+ ../..//Soft/Lib/ardrone_tool/Navdata/ardrone_academy_navdata.h \
+ ../..//Soft/Lib/ardrone_tool/Video/video_navdata_handler.h \
+ ../..//Soft/Lib/ardrone_tool/Academy/academy_download.h \
+ ../..//Soft/Lib/ardrone_tool/Academy/academy.h \
+ ../..//Soft/Lib/utils/ardrone_ftp.h ../VP_Com/vp_com_socket.h \
+ ../VP_Com/vp_com.h /usr/include/dirent.h \
  /usr/include/i386-linux-gnu/bits/dirent.h /usr/include/ftw.h \
  /usr/include/i386-linux-gnu/sys/stat.h \
  /usr/include/i386-linux-gnu/bits/stat.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Academy/academy_upload.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/UI/ardrone_input.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Com/config_com.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Com/config_serial.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Com/config_wifi.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/utils/ardrone_gen_ids.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/utils/ardrone_time.h \
+ ../..//Soft/Lib/ardrone_tool/Academy/academy_upload.h \
+ ../..//Soft/Lib/ardrone_tool/UI/ardrone_input.h \
+ ../..//Soft/Lib/ardrone_tool/Com/config_com.h \
+ ../..//Soft/Lib/ardrone_tool/Com/config_serial.h \
+ ../..//Soft/Lib/ardrone_tool/Com/config_wifi.h \
+ ../..//Soft/Lib/utils/ardrone_gen_ids.h \
+ ../..//Soft/Lib/utils/ardrone_time.h \
  /usr/include/i386-linux-gnu/sys/socket.h \
  /usr/include/i386-linux-gnu/sys/uio.h \
  /usr/include/i386-linux-gnu/bits/uio.h \
@@ -132,8 +119,7 @@ ardrone_tool.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linu
  /usr/include/i386-linux-gnu/asm/socket.h \
  /usr/include/asm-generic/socket.h \
  /usr/include/i386-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/i386-linux-gnu/bits/socket2.h /usr/include/netinet/in.h \
+ /usr/include/asm-generic/sockios.h /usr/include/netinet/in.h \
  /usr/include/i386-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/ardrone_version.h \
- /usr/include/locale.h /usr/include/i386-linux-gnu/bits/locale.h
+ ../..//Soft/Lib/ardrone_tool/ardrone_version.h /usr/include/locale.h \
+ /usr/include/i386-linux-gnu/bits/locale.h

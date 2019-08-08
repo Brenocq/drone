@@ -72,7 +72,7 @@ ifdef PC_TARGET
     endif
   endif
 
-  GENERIC_CFLAGS+=-D_MOBILE
+  GENERIC_CFLAGS+= -g -D_MOBILE
 
   ifeq ($(RECORD_RAW_VIDEO),yes)
     GENERIC_CFLAGS+=-DRECORD_RAW_VIDEO

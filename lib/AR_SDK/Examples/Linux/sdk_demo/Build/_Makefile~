@@ -1,0 +1,295 @@
+#SHELL = /bin/sh
+#.PHONY: clean, mkdir, install, uninstall, html
+#
+#ifndef release.version
+#  release.version = 1.3.1
+#endif
+#
+## determine current platform
+#BUILD_TYPE ?= debug
+#ifeq ($(OS),Windows_NT)
+#	OSTYPE ?= $(OS)
+#	MACHINETYPE ?= $(PROCESSOR_ARCHITECTURE)
+#else
+#	OSTYPE ?= $(shell uname -s)
+#	MACHINETYPE ?= $(shell uname -m)
+#	build.level = $(shell date)
+#endif # OS
+
+ifeq ($(OSTYPE),linux)
+	OSTYPE = Linux
+endif
+
+
+PAHO_DIR=$(shell pwd)/../../../lib/MQTT
+
+# assume this is normally run in the main Paho directory
+ifndef mqtt_srcdir
+  mqtt_srcdir = ${PAHO_DIR}/src
+endif
+
+ifndef mqtt_blddir
+  mqtt_blddir = ${PAHO_DIR}/build/output
+endif
+#
+#ifndef mqtt_blddir_work
+#  mqtt_blddir_work = build
+#endif
+#
+#ifndef docdir
+#  docdir = $(mqtt_blddir)/doc
+#endif
+#
+#ifndef docdir_work
+#  docdir_work = $(mqtt_blddir)/../doc
+#endif
+#
+#ifndef prefix
+#	prefix = /usr/local
+#endif
+#
+#ifndef exec_prefix
+#	exec_prefix = ${prefix}
+#endif
+#
+#bindir = $(exec_prefix)/bin
+#includedir = $(prefix)/include
+#libdir = $(exec_prefix)/lib
+#datarootdir = $(prefix)/share
+#mandir = $(datarootdir)/man
+#man1dir = $(mandir)/man1
+#man2dir = $(mandir)/man2
+#man3dir = $(mandir)/man3
+#
+SOURCE_FILES = $(wildcard $(mqtt_srcdir)/*.c)
+#SOURCE_FILES_C = $(filter-out $(mqtt_srcdir)/MQTTAsync.c $(mqtt_srcdir)/MQTTVersion.c $(mqtt_srcdir)/SSLSocket.c, $(SOURCE_FILES))
+#SOURCE_FILES_CS = $(filter-out $(mqtt_srcdir)/MQTTAsync.c $(mqtt_srcdir)/MQTTVersion.c, $(SOURCE_FILES))
+SOURCE_FILES_A = $(filter-out $(mqtt_srcdir)/MQTTClient.c $(mqtt_srcdir)/MQTTVersion.c $(mqtt_srcdir)/SSLSocket.c, $(SOURCE_FILES))
+SOURCE_FILES_AS = $(filter-out $(mqtt_srcdir)/MQTTClient.c $(mqtt_srcdir)/MQTTVersion.c, $(SOURCE_FILES))
+
+HEADERS = $(mqtt_srcdir)/*.h
+HEADERS_C = $(filter-out $(mqtt_srcdir)/MQTTAsync.h, $(HEADERS))
+HEADERS_A = $(HEADERS)
+
+MQTTLIB_C = paho-mqtt3c
+MQTTLIB_CS = paho-mqtt3cs
+MQTTLIB_A = paho-mqtt3a
+MQTTLIB_AS = paho-mqtt3as
+#
+CC ?= gcc
+#
+#ifndef INSTALL
+#INSTALL = install
+#endif
+#INSTALL_PROGRAM = $(INSTALL)
+#INSTALL_DATA =  $(INSTALL) -m 644
+#DOXYGEN_COMMAND = doxygen
+#
+MAJOR_VERSION = 1
+MINOR_VERSION = 0
+VERSION = ${MAJOR_VERSION}.${MINOR_VERSION}
+#
+MQTTLIB_C_NAME = lib${MQTTLIB_C}.so.${VERSION}
+MQTTLIB_CS_NAME = lib${MQTTLIB_CS}.so.${VERSION}
+MQTTLIB_A_NAME = lib${MQTTLIB_A}.so.${VERSION}
+MQTTLIB_AS_NAME = lib${MQTTLIB_AS}.so.${VERSION}
+#MQTTVERSION_NAME = paho_c_version
+#PAHO_C_PUB_NAME = paho_c_pub
+#PAHO_C_SUB_NAME = paho_c_sub
+#PAHO_CS_PUB_NAME = paho_cs_pub
+#PAHO_CS_SUB_NAME = paho_cs_sub
+#
+MQTTLIB_C_TARGET = ${mqtt_blddir}/${MQTTLIB_C_NAME}
+MQTTLIB_CS_TARGET = ${mqtt_blddir}/${MQTTLIB_CS_NAME}
+MQTTLIB_A_TARGET = ${mqtt_blddir}/${MQTTLIB_A_NAME}
+MQTTLIB_AS_TARGET = ${mqtt_blddir}/${MQTTLIB_AS_NAME}
+
+#MQTTVERSION_TARGET = ${mqtt_blddir}/${MQTTVERSION_NAME}
+#PAHO_C_PUB_TARGET = ${mqtt_blddir}/samples/${PAHO_C_PUB_NAME}
+#PAHO_C_SUB_TARGET = ${mqtt_blddir}/samples/${PAHO_C_SUB_NAME}
+#PAHO_CS_PUB_TARGET = ${mqtt_blddir}/samples/${PAHO_CS_PUB_NAME}
+#PAHO_CS_SUB_TARGET = ${mqtt_blddir}/samples/${PAHO_CS_SUB_NAME}
+#
+CCFLAGS_SO = -fPIC $(CFLAGS) -Wall -fvisibility=hidden -I$(mqtt_blddir_work) 
+FLAGS_EXE = $(LDFLAGS) -I ${mqtt_srcdir} -lpthread -lrt -L ${mqtt_blddir}
+FLAGS_EXES = $(LDFLAGS) -I ${mqtt_srcdir} ${START_GROUP} -lpthread -lssl -lcrypto -lrt ${END_GROUP} -L ${mqtt_blddir}
+#
+LDCONFIG ?= /sbin/ldconfig
+LDFLAGS_C = $(LDFLAGS) -shared -Wl,-init,$(MQTTCLIENT_INIT) -lpthread -lrt
+LDFLAGS_CS = $(LDFLAGS) -shared $(START_GROUP) -lpthread $(EXTRA_LIB) -lssl -lcrypto -lrt $(END_GROUP) -Wl,-init,$(MQTTCLIENT_INIT)
+LDFLAGS_A = $(LDFLAGS) -shared -Wl,-init,$(MQTTASYNC_INIT) -lpthread -lrt
+LDFLAGS_AS = $(LDFLAGS) -shared $(START_GROUP) -lpthread $(EXTRA_LIB) -lssl -lcrypto -lrt $(END_GROUP) -Wl,-init,$(MQTTASYNC_INIT)
+#
+#SED_COMMAND = sed \
+#    -e "s/@CLIENT_VERSION@/${release.version}/g" \
+#    -e "s/@BUILD_TIMESTAMP@/${build.level}/g"
+#
+ifeq ($(OSTYPE),Linux)
+
+MQTTCLIENT_INIT = MQTTClient_init
+MQTTASYNC_INIT = MQTTAsync_init
+START_GROUP = -Wl,--start-group
+END_GROUP = -Wl,--end-group
+
+EXTRA_LIB = -ldl
+
+LDFLAGS_C += -Wl,-soname,lib$(MQTTLIB_C).so.${MAJOR_VERSION}
+LDFLAGS_CS += -Wl,-soname,lib$(MQTTLIB_CS).so.${MAJOR_VERSION} -Wl,-no-whole-archive
+LDFLAGS_A += -Wl,-soname,lib${MQTTLIB_A}.so.${MAJOR_VERSION}
+LDFLAGS_AS += -Wl,-soname,lib${MQTTLIB_AS}.so.${MAJOR_VERSION} -Wl,-no-whole-archive
+
+endif
+
+#all: build
+#
+#build: | mkdir ${MQTTLIB_C_TARGET} ${MQTTLIB_CS_TARGET} ${MQTTLIB_A_TARGET} ${MQTTLIB_AS_TARGET} ${MQTTVERSION_TARGET} ${SYNC_SAMPLES} ${SYNC_UTILS} ${ASYNC_SAMPLES} ${ASYNC_UTILS} ${SYNC_TESTS} ${SYNC_SSL_TESTS} ${ASYNC_TESTS} ${ASYNC_SSL_TESTS}
+#
+#clean:
+#	rm -rf ${mqtt_blddir}/*
+#	rm -rf ${mqtt_blddir_work}/*
+#
+#mkdir:
+#	-mkdir -p ${mqtt_blddir}/samples
+#	-mkdir -p ${mqtt_blddir}/test
+#	echo OSTYPE is $(OSTYPE)
+#
+#${SYNC_TESTS}: ${mqtt_blddir}/test/%: ${mqtt_srcdir}/../test/%.c $(MQTTLIB_C_TARGET)
+#	${CC} -DNOSTACKTRACE -DNOLOG_MESSAGES $(mqtt_srcdir)/Thread.c -g -o $@ $< -l${MQTTLIB_C} ${FLAGS_EXE}
+#
+#${SYNC_SSL_TESTS}: ${mqtt_blddir}/test/%: ${mqtt_srcdir}/../test/%.c $(MQTTLIB_CS_TARGET)
+#	${CC} -g -o $@ $< -l${MQTTLIB_CS} ${FLAGS_EXES}
+#
+#${ASYNC_TESTS}: ${mqtt_blddir}/test/%: ${mqtt_srcdir}/../test/%.c $(MQTTLIB_CS_TARGET)
+#	${CC} -g -o $@ $< -l${MQTTLIB_A} ${FLAGS_EXE}
+#
+#${ASYNC_SSL_TESTS}: ${mqtt_blddir}/test/%: ${mqtt_srcdir}/../test/%.c $(MQTTLIB_CS_TARGET) $(MQTTLIB_AS_TARGET)
+#	${CC} -g -o $@ $< -l${MQTTLIB_AS} ${FLAGS_EXES}
+#
+#${SYNC_SAMPLES}: ${mqtt_blddir}/samples/%: ${mqtt_srcdir}/samples/%.c $(MQTTLIB_C_TARGET)
+#	${CC} -o $@ $< -l${MQTTLIB_CS} ${FLAGS_EXES} 
+#	
+#${SYNC_UTILS}: ${mqtt_blddir}/samples/%: ${mqtt_srcdir}/samples/%.c ${mqtt_srcdir}/samples/pubsub_opts.c $(MQTTLIB_CS_TARGET)
+#	${CC} -o $@ $< -l${MQTTLIB_CS} ${FLAGS_EXES} ${mqtt_srcdir}/samples/pubsub_opts.c
+#
+#${ASYNC_SAMPLES}: ${mqtt_blddir}/samples/%: ${mqtt_srcdir}/samples/%.c $(MQTTLIB_A_TARGET)
+#	${CC} -o $@ $< -l${MQTTLIB_AS} ${FLAGS_EXES}
+#	
+#${ASYNC_UTILS}: ${mqtt_blddir}/samples/%: ${mqtt_srcdir}/samples/%.c ${mqtt_srcdir}/samples/pubsub_opts.c $(MQTTLIB_AS_TARGET)
+#	${CC} -o $@ $< -l${MQTTLIB_AS} ${FLAGS_EXES} ${mqtt_srcdir}/samples/pubsub_opts.c
+#
+#$(mqtt_blddir_work)/VersionInfo.h: $(mqtt_srcdir)/VersionInfo.h.in
+#	$(SED_COMMAND) $< > $@
+#
+#${MQTTLIB_C_TARGET}: ${SOURCE_FILES_C} ${HEADERS_C} $(mqtt_blddir_work)/VersionInfo.h
+#	${CC} ${CCFLAGS_SO} -o $@ ${SOURCE_FILES_C} ${LDFLAGS_C}
+#	-ln -s lib$(MQTTLIB_C).so.${VERSION}  ${mqtt_blddir}/lib$(MQTTLIB_C).so.${MAJOR_VERSION}
+#	-ln -s lib$(MQTTLIB_C).so.${MAJOR_VERSION} ${mqtt_blddir}/lib$(MQTTLIB_C).so
+#
+#${MQTTLIB_CS_TARGET}: ${SOURCE_FILES_CS} ${HEADERS_C} $(mqtt_blddir_work)/VersionInfo.h
+#	${CC} ${CCFLAGS_SO} -o $@ ${SOURCE_FILES_CS} -DOPENSSL ${LDFLAGS_CS}
+#	-ln -s lib$(MQTTLIB_CS).so.${VERSION}  ${mqtt_blddir}/lib$(MQTTLIB_CS).so.${MAJOR_VERSION}
+#	-ln -s lib$(MQTTLIB_CS).so.${MAJOR_VERSION} ${mqtt_blddir}/lib$(MQTTLIB_CS).so
+#
+#${MQTTLIB_A_TARGET}: ${SOURCE_FILES_A} ${HEADERS_A} $(mqtt_blddir_work)/VersionInfo.h
+#	${CC} ${CCFLAGS_SO} -o $@ ${SOURCE_FILES_A} ${LDFLAGS_A}
+#	-ln -s lib$(MQTTLIB_A).so.${VERSION}  ${mqtt_blddir}/lib$(MQTTLIB_A).so.${MAJOR_VERSION}
+#	-ln -s lib$(MQTTLIB_A).so.${MAJOR_VERSION} ${mqtt_blddir}/lib$(MQTTLIB_A).so
+#
+#${MQTTLIB_AS_TARGET}: ${SOURCE_FILES_AS} ${HEADERS_A} $(mqtt_blddir_work)/VersionInfo.h
+#	${CC} ${CCFLAGS_SO} -o $@ ${SOURCE_FILES_AS} -DOPENSSL ${LDFLAGS_AS}
+#	-ln -s lib$(MQTTLIB_AS).so.${VERSION}  ${mqtt_blddir}/lib$(MQTTLIB_AS).so.${MAJOR_VERSION}
+#	-ln -s lib$(MQTTLIB_AS).so.${MAJOR_VERSION} ${mqtt_blddir}/lib$(MQTTLIB_AS).so
+#
+#${MQTTVERSION_TARGET}: $(mqtt_srcdir)/MQTTVersion.c $(mqtt_srcdir)/MQTTAsync.h ${MQTTLIB_A_TARGET} $(MQTTLIB_CS_TARGET)
+#	${CC} ${FLAGS_EXE} -o $@ -l${MQTTLIB_A} $(mqtt_srcdir)/MQTTVersion.c -ldl
+#
+#
+############################################################
+
+SDK_PATH:=$(shell pwd)/../../../../ARDroneLib
+PC_TARGET=yes
+USE_LINUX=yes
+
+ifdef MYKONOS
+   include $(ARDRONE_CUSTOM_CONFIG)
+   include $(ARDRONE_BUILD_CONFIG)
+else
+   include $(SDK_PATH)/Soft/Build/custom.makefile
+   include $(SDK_PATH)/Soft/Build/config.makefile
+endif
+
+ifeq "$(RELEASE_BUILD)" "yes"
+   ARDRONE_TARGET_DIR=$(shell pwd)/../../Build/Release
+else
+   ARDRONE_TARGET_DIR=$(shell pwd)/../../Build/Debug
+endif
+
+TARGET=drone_publish_data
+
+SRC_DIR:=$(shell pwd)/../Sources
+
+# Define application source files
+GENERIC_BINARIES_SOURCE_DIR:=$(SRC_DIR)
+
+GENERIC_BINARIES_COMMON_SOURCE_FILES+=			\
+   Navdata/navdata.c    \
+   Video/video_stage.c
+
+GENERIC_INCLUDES+=					\
+	$(SRC_DIR) \
+	$(LIB_DIR) \
+	$(SDK_PATH)/Soft/Common \
+	$(SDK_PATH)/Soft/Lib \
+	$(mqtt_srcdir) #mqtt sources
+
+GENERIC_TARGET_BINARIES_PREFIX=
+
+GENERIC_TARGET_BINARIES_DIR=$(ARDRONE_TARGET_DIR)
+
+GENERIC_BINARIES_SOURCE_ENTRYPOINTS+=			\
+   ardrone_testing_tool.c
+
+GENERIC_INCLUDES+=
+GENERIC_INCLUDES:=$(addprefix -I,$(GENERIC_INCLUDES))
+
+GENERIC_LIB_PATHS+= \
+	$(mqtt_blddir)
+GENERIC_LIB_PATHS=-L$(GENERIC_TARGET_BINARIES_DIR)
+GENERIC_LIBS=-lpc_ardrone -lgtk-x11-2.0 -lrt $(LDFLAGS_A)
+
+SDK_FLAGS+="USE_APP=yes"
+SDK_FLAGS+="APP_ID=linux_sdk_demo"
+
+GENERIC_CFLAGS+=-g
+
+export GENERIC_CFLAGS
+export GENERIC_LIBS
+export GENERIC_LIB_PATHS
+export GENERIC_INCLUDES
+export GENERIC_BINARIES_SOURCE_DIR
+export GENERIC_BINARIES_COMMON_SOURCE_FILES
+export GENERIC_TARGET_BINARIES_PREFIX
+export GENERIC_TARGET_BINARIES_DIR
+export GENERIC_BINARIES_SOURCE_ENTRYPOINTS
+
+$SDK_FLAGS+= \
+	#$(LDFLAGS_A)
+
+# Bug fix ...
+export GENERIC_LIBRARY_SOURCE_DIR=$(GENERIC_BINARIES_SOURCE_DIR)
+
+.PHONY: $(TARGET) build_libs
+
+all: build_libs $(TARGET)
+
+$(TARGET):
+	@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
+	mv $(ARDRONE_TARGET_DIR)/ardrone_testing_tool $(TARGET)
+	mv $(TARGET) $(ARDRONE_TARGET_DIR)/
+
+$(MAKECMDGOALS): build_libs
+	@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
+
+build_libs:
+	@$(MAKE) -C $(SDK_PATH)/Soft/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
+

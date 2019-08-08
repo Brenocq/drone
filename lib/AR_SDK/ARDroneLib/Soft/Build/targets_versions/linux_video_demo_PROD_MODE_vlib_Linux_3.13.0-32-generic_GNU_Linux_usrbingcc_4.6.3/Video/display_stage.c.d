@@ -1,7 +1,7 @@
 display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/Video/display_stage.c.d: \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../Sources/Video/display_stage.c \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../Sources/Video/display_stage.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage.h \
+ /home/hiram/drone/src/video_demo/Build/../Sources/Video/display_stage.c \
+ /home/hiram/drone/src/video_demo/Build/../Sources/Video/display_stage.h \
+ /home/hiram/drone/src/video_demo/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage.h \
  ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h ../VP_Os/vp_os_print.h \
  /usr/include/stdio.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/predefs.h \
@@ -15,9 +15,7 @@ display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vli
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h ../VP_Os/vp_os_types.h \
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h ../VP_Os/vp_os_types.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h ..//VP_Os/linux/vp_os_serial.h \
  /usr/include/termios.h /usr/include/i386-linux-gnu/bits/termios.h \
@@ -31,23 +29,18 @@ display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vli
  /usr/include/i386-linux-gnu/bits/timex.h /usr/include/xlocale.h \
  /usr/include/i386-linux-gnu/bits/pthreadtypes.h \
  /usr/include/i386-linux-gnu/bits/setjmp.h ../VP_Os/vp_os_malloc.h \
- /usr/include/assert.h /usr/include/string.h \
- /usr/include/i386-linux-gnu/bits/string.h \
- /usr/include/i386-linux-gnu/bits/string2.h /usr/include/stdlib.h \
- /usr/include/i386-linux-gnu/bits/string3.h \
+ /usr/include/assert.h /usr/include/string.h /usr/include/stdlib.h \
  /usr/include/i386-linux-gnu/bits/waitflags.h \
  /usr/include/i386-linux-gnu/bits/waitstatus.h \
  /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/i386-linux-gnu/sys/select.h \
  /usr/include/i386-linux-gnu/bits/select.h \
  /usr/include/i386-linux-gnu/bits/sigset.h \
- /usr/include/i386-linux-gnu/bits/select2.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
- /usr/include/i386-linux-gnu/bits/stdlib.h ../VP_Os/vp_os_delay.h \
- ../VP_Api/vp_api.h ../VP_Api/vp_api_config.h ../VP_Api/vp_api_stage.h \
- ../VP_Api/vp_api_supervisor.h ../VP_Api/vp_api_error.h \
- ../VP_Os/vp_os_error_handling.h ../VP_Api/vp_api_picture.h \
- ../../FFMPEG/Includes/libavutil/avutil.h \
+ ../VP_Os/vp_os_delay.h ../VP_Api/vp_api.h ../VP_Api/vp_api_config.h \
+ ../VP_Api/vp_api_stage.h ../VP_Api/vp_api_supervisor.h \
+ ../VP_Api/vp_api_error.h ../VP_Os/vp_os_error_handling.h \
+ ../VP_Api/vp_api_picture.h ../../FFMPEG/Includes/libavutil/avutil.h \
  ../../FFMPEG/Includes/libavutil/common.h /usr/include/ctype.h \
  /usr/include/errno.h /usr/include/i386-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/i386-linux-gnu/asm/errno.h \
@@ -66,7 +59,6 @@ display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vli
  /usr/include/i386-linux-gnu/bits/nan.h \
  /usr/include/i386-linux-gnu/bits/mathdef.h \
  /usr/include/i386-linux-gnu/bits/mathcalls.h \
- /usr/include/i386-linux-gnu/bits/mathinline.h \
  ../../FFMPEG/Includes/libavutil/attributes.h \
  ../../FFMPEG/Includes/libavutil/avconfig.h \
  ../../FFMPEG/Includes/libavutil/mem.h \
@@ -79,11 +71,11 @@ display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vli
  ../../FFMPEG/Includes/libavutil/pixfmt.h \
  ../VP_Api/vp_api_thread_helper.h ../VP_Os/vp_os_thread.h \
  ..//VP_Os/linux/vp_os_thread_dep.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_com_stage.h \
+ /home/hiram/drone/src/video_demo/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_com_stage.h \
  ../VP_Com/vp_com.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_tcp.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
+ /home/hiram/drone/src/video_demo/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_tcp.h \
+ /home/hiram/drone/src/video_demo/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
+ /home/hiram/drone/src/video_demo/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
  ../../FFMPEG/Includes/libavcodec/avcodec.h \
  ../../FFMPEG/Includes/libavutil/samplefmt.h \
  ../../FFMPEG/Includes/libavutil/cpu.h \
@@ -102,9 +94,9 @@ display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vli
  ../../VLIB/../VLIB/video_picture_defines.h \
  ../../VLIB/../VLIB/video_gob.h ../../VLIB/../VLIB/video_macroblock.h \
  ../../VLIB/../VLIB/P264/p264_common.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_merge_slices.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/video_demo/Build/../../../../ARDroneLib/Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
+ /home/hiram/drone/src/video_demo/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_merge_slices.h \
+ /home/hiram/drone/src/video_demo/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
+ /home/hiram/drone/src/video_demo/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
  /usr/include/gtk-2.0/gtk/gtk.h /usr/include/gtk-2.0/gdk/gdk.h \
  /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h \
  /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
@@ -231,7 +223,6 @@ display_stage.o ../../Soft/Build/targets_versions/linux_video_demo_PROD_MODE_vli
  /usr/include/i386-linux-gnu/bits/posix_opt.h \
  /usr/include/i386-linux-gnu/bits/environments.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/i386-linux-gnu/bits/unistd.h \
  /usr/include/glib-2.0/gio/gdatainputstream.h \
  /usr/include/glib-2.0/gio/gdataoutputstream.h \
  /usr/include/glib-2.0/gio/gdbusaddress.h \

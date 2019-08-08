@@ -1,5 +1,4 @@
-maths.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/Maths/maths.c.d: ../..//Soft/Lib/Maths/maths.c \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/Maths/maths.h \
+maths.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/Maths/maths.c.d: ../..//Soft/Lib/Maths/maths.c ../..//Soft/Lib/Maths/maths.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/i386-linux-gnu/bits/predefs.h \
@@ -20,5 +19,4 @@ maths.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.
  /usr/include/i386-linux-gnu/bits/nan.h \
  /usr/include/i386-linux-gnu/bits/mathdef.h \
  /usr/include/i386-linux-gnu/bits/mathcalls.h \
- /usr/include/i386-linux-gnu/bits/mathinline.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/float.h

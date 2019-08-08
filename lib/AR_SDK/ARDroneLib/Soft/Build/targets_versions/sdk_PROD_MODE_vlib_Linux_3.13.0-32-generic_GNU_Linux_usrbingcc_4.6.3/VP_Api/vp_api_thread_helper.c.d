@@ -26,9 +26,4 @@ vp_api_thread_helper.o ../../Soft/Build/targets_versions/sdk_PROD_MODE_vlib_Linu
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h /usr/include/string.h \
- /usr/include/i386-linux-gnu/bits/string.h \
- /usr/include/i386-linux-gnu/bits/string2.h /usr/include/stdlib.h \
- /usr/include/i386-linux-gnu/bits/string3.h
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/string.h

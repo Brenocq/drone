@@ -23,8 +23,7 @@ vp_os_signal.o ../../Soft/Build/targets_versions/sdk_PROD_MODE_vlib_Linux_3.13.0
  /usr/include/i386-linux-gnu/sys/time.h \
  /usr/include/i386-linux-gnu/sys/select.h \
  /usr/include/i386-linux-gnu/bits/select.h \
- /usr/include/i386-linux-gnu/bits/sigset.h \
- /usr/include/i386-linux-gnu/bits/select2.h /usr/include/errno.h \
+ /usr/include/i386-linux-gnu/bits/sigset.h /usr/include/errno.h \
  /usr/include/i386-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/i386-linux-gnu/asm/errno.h /usr/include/asm-generic/errno.h \
  /usr/include/asm-generic/errno-base.h

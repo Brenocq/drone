@@ -25,19 +25,15 @@ vp_com_wired.o ../../Soft/Build/targets_versions/sdk_PROD_MODE_vlib_Linux_3.13.0
  ../VP_Api/vp_api_thread_helper.h ../VP_Os/vp_os_thread.h \
  ..//VP_Os/linux/vp_os_thread_dep.h ..//VP_Com/linux/vp_com_config_itf.h \
  ../VP_Os/vp_os_malloc.h /usr/include/assert.h /usr/include/string.h \
- /usr/include/i386-linux-gnu/bits/string.h \
- /usr/include/i386-linux-gnu/bits/string2.h /usr/include/stdlib.h \
- /usr/include/i386-linux-gnu/bits/string3.h \
- /usr/include/i386-linux-gnu/bits/waitflags.h \
+ /usr/include/stdlib.h /usr/include/i386-linux-gnu/bits/waitflags.h \
  /usr/include/i386-linux-gnu/bits/waitstatus.h \
  /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/i386-linux-gnu/sys/select.h \
  /usr/include/i386-linux-gnu/bits/select.h \
  /usr/include/i386-linux-gnu/bits/sigset.h \
- /usr/include/i386-linux-gnu/bits/select2.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
- /usr/include/i386-linux-gnu/bits/stdlib.h /usr/include/netdb.h \
- /usr/include/netinet/in.h /usr/include/i386-linux-gnu/sys/socket.h \
+ /usr/include/netdb.h /usr/include/netinet/in.h \
+ /usr/include/i386-linux-gnu/sys/socket.h \
  /usr/include/i386-linux-gnu/sys/uio.h \
  /usr/include/i386-linux-gnu/bits/uio.h \
  /usr/include/i386-linux-gnu/bits/socket.h \
@@ -45,14 +41,10 @@ vp_com_wired.o ../../Soft/Build/targets_versions/sdk_PROD_MODE_vlib_Linux_3.13.0
  /usr/include/i386-linux-gnu/asm/socket.h \
  /usr/include/asm-generic/socket.h \
  /usr/include/i386-linux-gnu/asm/sockios.h \
- /usr/include/asm-generic/sockios.h \
- /usr/include/i386-linux-gnu/bits/socket2.h \
- /usr/include/i386-linux-gnu/bits/in.h /usr/include/rpc/netdb.h \
- /usr/include/i386-linux-gnu/bits/siginfo.h \
+ /usr/include/asm-generic/sockios.h /usr/include/i386-linux-gnu/bits/in.h \
+ /usr/include/rpc/netdb.h /usr/include/i386-linux-gnu/bits/siginfo.h \
  /usr/include/i386-linux-gnu/bits/netdb.h /usr/include/net/if.h \
  /usr/include/stdio.h /usr/include/libio.h /usr/include/_G_config.h \
  /usr/include/wchar.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h

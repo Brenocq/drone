@@ -1,5 +1,4 @@
-utils.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/utils/utils.c.d: \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/utils/utils.c \
+utils.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/utils/utils.c.d: /home/hiram/drone/src/Navigation/Build/../Sources/utils/utils.c \
  /usr/include/stdio.h /usr/include/features.h \
  /usr/include/i386-linux-gnu/bits/predefs.h \
  /usr/include/i386-linux-gnu/sys/cdefs.h \
@@ -13,16 +12,14 @@ utils.o ../../Soft/Build/targets_versions/ardrone_navigation_PROD_MODE_vlib_Linu
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
  /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/config.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/config.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h ..//VP_Os/linux/vp_os_serial.h \
  /usr/include/termios.h /usr/include/i386-linux-gnu/bits/termios.h \
  /usr/include/i386-linux-gnu/sys/ttydefaults.h ../VP_Os/linux/intrin.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../../../../ARDroneLib/Soft/Common/generated_custom.h \
- /home/hiram/Downloads/ARDrone_SDK_2_0_1/Examples/Linux/Navigation/Build/../Sources/utils/utils.h \
+ /home/hiram/drone/src/Navigation/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/generated_custom.h \
+ /home/hiram/drone/src/Navigation/Build/../Sources/utils/utils.h \
  ../VP_Os/vp_os_signal.h ..//VP_Os/linux/vp_os_signal_dep.h \
  /usr/include/pthread.h /usr/include/endian.h \
  /usr/include/i386-linux-gnu/bits/endian.h \

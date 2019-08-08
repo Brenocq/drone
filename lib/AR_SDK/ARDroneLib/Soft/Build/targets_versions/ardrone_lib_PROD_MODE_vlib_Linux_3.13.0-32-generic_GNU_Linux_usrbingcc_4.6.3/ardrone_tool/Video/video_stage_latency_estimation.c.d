@@ -1,7 +1,7 @@
 video_stage_latency_estimation.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0-32-generic_GNU_Linux_usrbingcc_4.6.3/ardrone_tool/Video/video_stage_latency_estimation.c.d: \
  ../..//Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.c \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
+ ../..//Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
+ ../..//Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
  ../VP_Api/vp_api.h ../VP_Os/vp_os_signal.h ../VP_Os/vp_os_types.h \
  ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
@@ -45,26 +45,18 @@ video_stage_latency_estimation.o ../../Soft/Build/targets_versions/ardrone_lib_P
  /usr/include/i386-linux-gnu/bits/inf.h \
  /usr/include/i386-linux-gnu/bits/nan.h \
  /usr/include/i386-linux-gnu/bits/mathdef.h \
- /usr/include/i386-linux-gnu/bits/mathcalls.h \
- /usr/include/i386-linux-gnu/bits/mathinline.h /usr/include/stdio.h \
+ /usr/include/i386-linux-gnu/bits/mathcalls.h /usr/include/stdio.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h /usr/include/stdlib.h \
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h /usr/include/stdlib.h \
  /usr/include/i386-linux-gnu/bits/waitflags.h \
  /usr/include/i386-linux-gnu/bits/waitstatus.h \
  /usr/include/i386-linux-gnu/sys/types.h \
  /usr/include/i386-linux-gnu/sys/select.h \
  /usr/include/i386-linux-gnu/bits/select.h \
  /usr/include/i386-linux-gnu/bits/sigset.h \
- /usr/include/i386-linux-gnu/bits/select2.h \
  /usr/include/i386-linux-gnu/sys/sysmacros.h /usr/include/alloca.h \
- /usr/include/i386-linux-gnu/bits/stdlib.h /usr/include/string.h \
- /usr/include/i386-linux-gnu/bits/string.h \
- /usr/include/i386-linux-gnu/bits/string2.h \
- /usr/include/i386-linux-gnu/bits/string3.h \
- ../../FFMPEG/Includes/libavutil/attributes.h \
+ /usr/include/string.h ../../FFMPEG/Includes/libavutil/attributes.h \
  ../../FFMPEG/Includes/libavutil/avconfig.h \
  ../../FFMPEG/Includes/libavutil/mem.h \
  ../../FFMPEG/Includes/libavutil/avutil.h \
@@ -76,8 +68,8 @@ video_stage_latency_estimation.o ../../Soft/Build/targets_versions/ardrone_lib_P
  ../../FFMPEG/Includes/libavutil/pixfmt.h ../../VLIB/video_picture.h \
  ../../VLIB/video_picture_defines.h ../../VLIB/video_gob.h \
  ../../VLIB/video_macroblock.h ../../VLIB/P264/p264_common.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
+ ../..//Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
+ ../..//Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
  ../../FFMPEG/Includes/libavcodec/avcodec.h \
  ../../FFMPEG/Includes/libavutil/samplefmt.h \
  ../../FFMPEG/Includes/libavutil/cpu.h \

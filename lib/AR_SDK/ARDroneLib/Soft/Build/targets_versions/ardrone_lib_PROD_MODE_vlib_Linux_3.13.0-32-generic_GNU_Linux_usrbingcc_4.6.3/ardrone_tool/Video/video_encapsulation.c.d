@@ -12,12 +12,10 @@ video_encapsulation.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vl
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdarg.h \
  /usr/include/i386-linux-gnu/bits/stdio_lim.h \
- /usr/include/i386-linux-gnu/bits/sys_errlist.h \
- /usr/include/i386-linux-gnu/bits/stdio.h \
- /usr/include/i386-linux-gnu/bits/stdio2.h ../VP_Os/vp_os_types.h \
+ /usr/include/i386-linux-gnu/bits/sys_errlist.h ../VP_Os/vp_os_types.h \
  ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/i386-linux-gnu/bits/wchar.h ..//VP_Os/linux/vp_os_serial.h \
  /usr/include/termios.h /usr/include/i386-linux-gnu/bits/termios.h \
  /usr/include/i386-linux-gnu/sys/ttydefaults.h ../VP_Os/linux/intrin.h \
- /home/hiram/Desktop/drone_V2/src/drone_publish_data/Build/../../../lib/AR_SDK/ARDroneLib/Soft/Common/video_encapsulation.h
+ ../..//Soft/Common/video_encapsulation.h

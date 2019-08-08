@@ -10,9 +10,9 @@ vp_os_delay.o ../../Soft/Build/targets_versions/sdk_PROD_MODE_vlib_Linux_3.13.0-
  /usr/include/i386-linux-gnu/bits/typesizes.h \
  /usr/lib/gcc/i686-linux-gnu/4.6/include/stddef.h \
  /usr/include/i386-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/i386-linux-gnu/bits/unistd.h ../VP_Os/vp_os_delay.h \
- ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
- /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
- /usr/include/i386-linux-gnu/bits/wchar.h ..//VP_Os/linux/vp_os_serial.h \
- /usr/include/termios.h /usr/include/i386-linux-gnu/bits/termios.h \
+ ../VP_Os/vp_os_delay.h ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h \
+ ../VP_Os/vp_os_rtmon.h /usr/lib/gcc/i686-linux-gnu/4.6/include/stdint.h \
+ /usr/include/stdint.h /usr/include/i386-linux-gnu/bits/wchar.h \
+ ..//VP_Os/linux/vp_os_serial.h /usr/include/termios.h \
+ /usr/include/i386-linux-gnu/bits/termios.h \
  /usr/include/i386-linux-gnu/sys/ttydefaults.h ../VP_Os/linux/intrin.h
