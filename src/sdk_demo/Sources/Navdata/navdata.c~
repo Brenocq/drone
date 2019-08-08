@@ -44,8 +44,6 @@ inline C_RESULT demo_navdata_client_process( const navdata_unpacked_t* const nav
 
 	printf("\033[8A");
 
-	strcat(buf, itoa(nd->ctrl_state));
-
 	if (write (fd, buf, strlen (buf)) != strlen (buf))
 		perror ("write");
 
