@@ -18,6 +18,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "MQTTAsync.h"
+#include "config.h"
 
 #if !defined(WIN32)
 #include <unistd.h>
@@ -28,13 +29,6 @@
 #if defined(_WRS_KERNEL)
 #include <OsWrapper.h>
 #endif
-
-#define ADDRESS     "Server:Port "// "Server:Port"
-#define CLIENTID    "ExampleClientSub"
-#define TOPIC       "test"
-#define PAYLOAD     "Hello World!"
-#define QOS         1
-#define TIMEOUT     10000L
 
 volatile MQTTAsync_token deliveredtoken;
 
@@ -151,8 +145,8 @@ int main(int argc, char* argv[])
 	conn_opts.cleansession = 1;
 	conn_opts.onSuccess = onConnect;
 	conn_opts.onFailure = onConnectFailure;
-	conn_opts.username = "User";//"User"
-	conn_opts.password = "Password";//"Password"
+	conn_opts.username = USER;
+	conn_opts.password = PSW;
 	conn_opts.context = client;
 	if ((rc = MQTTAsync_connect(client, &conn_opts)) != MQTTASYNC_SUCCESS)
 	{

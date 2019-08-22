@@ -26,7 +26,7 @@ DRONE_SAMPLES = ${addprefix ${DRONE_BLD}/,${DRONE_FILES_A}}
 
 .PHONY: all clean
 
-all:
+all: config.o
 	@echo "${GREEN}${BOLD}Building...${NC}"
 	@$(MAKE) ${DRONE_SAMPLES}
 	@echo "${GREEN}${BOLD}End of build process${NC}"
@@ -36,7 +36,12 @@ init:
 	@echo "${GREEN}${BOLD}Added export files to bashrc${NC}"
 
 ${DRONE_SAMPLES}: ${DRONE_BLD}/%: ${DRONE_SRC}/%.c $(MQTTLIB_A_TARGET)
-	${CC} -o ${DRONE_SAMPLES} $< -l${MQTTLIB_AS} ${FLAGS_EXES}
+	@${CC} -o ${DRONE_SAMPLES} $< -l${MQTTLIB_AS} ${FLAGS_EXES}
+	
+
+config.o: ${DRONE_SRC}/config.h
+	@${CC} ${DRONE_SRC}/config.h -c
+	@echo "${GREEN}config.h compiled${NC}"
 
 clean:
 	@rm MQTTAsync_subscribe
