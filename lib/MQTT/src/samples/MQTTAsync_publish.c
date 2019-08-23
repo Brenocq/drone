@@ -135,60 +135,60 @@ int main(int argc, char* argv[])
 {
 	int rc;
 
-		MQTTAsync client;
-		MQTTAsync_connectOptions conn_opts = MQTTAsync_connectOptions_initializer;
+	MQTTAsync client;
+	MQTTAsync_connectOptions conn_opts = MQTTAsync_connectOptions_initializer;
 
-		int fd, fd_server, bytes_read;
+	int fd, fd_server, bytes_read;
 
-		MQTTAsync_create(&client, ADDRESS, CLIENTID, MQTTCLIENT_PERSISTENCE_NONE, NULL);
+	conn_opts.keepAliveInterval = 20;
+	conn_opts.cleansession = 1;
+	conn_opts.onSuccess = onConnect;
+	conn_opts.onFailure = onConnectFailure;
+	conn_opts.context = client;
 
-		MQTTAsync_setCallbacks(client, NULL, connlost, NULL, NULL);
 
-		conn_opts.keepAliveInterval = 20;
-		conn_opts.cleansession = 1;
-		conn_opts.onSuccess = onConnect;
-		conn_opts.onFailure = onConnectFailure;
-		conn_opts.context = client;
+	if ((fd = open (IN_FIFO, O_RDONLY)) == -1)
+	   perror ("open");
 
-		memset (buf2, '\0', sizeof (buf2));
 	while(1){
 
-		if ((fd = open (IN_FIFO, O_RDONLY)) == -1)
-		   perror ("open");
-
+		memset (buf2, '\0', sizeof (buf2));
 
 		if ((bytes_read = read (fd, buf2, sizeof(buf2))) == -1)
-		    perror ("read");
+			perror ("read");
 
-//	while(bytes_read > 0){
-		
 		if (bytes_read > 0) {
-		    printf ("Answer: %s\n", buf2);
-		
-		if ((rc = MQTTAsync_connect(client, &conn_opts)) != MQTTASYNC_SUCCESS){
-			printf("Failed to start connect, return code %d\n", rc);
-			exit(EXIT_FAILURE);
+
+			printf ("Message FIFO: %s\n", buf2);	
+
+			MQTTAsync_create(&client, ADDRESS, CLIENTID, MQTTCLIENT_PERSISTENCE_NONE, NULL);
+			MQTTAsync_setCallbacks(client, NULL, connlost, NULL, NULL);
+
+			if ((rc = MQTTAsync_connect(client, &conn_opts)) != MQTTASYNC_SUCCESS){
+				printf("Failed to start connect, return code %d\n", rc);
+				exit(EXIT_FAILURE);
+			}
+
+			printf("Waiting for publication of %s\n"
+				 "on topic %s for client with ClientID: %s\n",
+				 buf2, TOPIC, CLIENTID);
+
+			while (!finished)
+				#if defined(WIN32)
+					Sleep(100);
+				#else
+					usleep(10000L);
+				#endif
+
 		}
 
-		printf("Waiting for publication of %s\n"
-		     "on topic %s for client with ClientID: %s\n",
-		     buf2, TOPIC, CLIENTID);
-
-		while (!finished)
-			#if defined(WIN32)
-				Sleep(100);
-			#else
-				usleep(10000L);
-			#endif
-		MQTTAsync_destroy(&client);
-
-		}
+	MQTTAsync_destroy(&client);
 	}
 
 	if (close (fd) == -1) {
 	    perror ("close");
 	}
-//		}
+
  	return rc;
 }
 
