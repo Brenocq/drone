@@ -130,15 +130,16 @@ void onConnect(void* context, MQTTAsync_successData* response)
 	}
 }
 
-
-int main(int argc, char* argv[])
+int MQ()
 {
-	int rc;
-
+	finished = 0; //essa desgraça aqui falava que ja tinha feito uma vez, agora o mqtt deve estar pronto kct
 	MQTTAsync client;
 	MQTTAsync_connectOptions conn_opts = MQTTAsync_connectOptions_initializer;
+	int rc;
 
-	int fd, fd_server, bytes_read;
+	MQTTAsync_create(&client, ADDRESS, CLIENTID, MQTTCLIENT_PERSISTENCE_NONE, NULL);
+
+	MQTTAsync_setCallbacks(client, NULL, connlost, NULL, NULL);
 
 	conn_opts.keepAliveInterval = 20;
 	conn_opts.cleansession = 1;
@@ -146,50 +147,63 @@ int main(int argc, char* argv[])
 	conn_opts.onFailure = onConnectFailure;
 	conn_opts.context = client;
 
+	if ((rc = MQTTAsync_connect(client, &conn_opts)) != MQTTASYNC_SUCCESS)
+	{
+		printf("Failed to start connect, return code %d\n", rc);
+		exit(EXIT_FAILURE);
+	}else{
+		printf("delbem\n");	
+	}
+
+	printf("Waiting for publication of %s\n"
+         "on topic %s for client with ClientID: %s\n",
+         buf2, TOPIC, CLIENTID);
+	
+	while (!finished)
+	{
+		//printf("ta vendo \n");
+		#if defined(WIN32)
+			Sleep(100);
+		#else
+			usleep(10000L);
+		#endif
+	}
+
+	MQTTAsync_destroy(&client);
+ 	return rc;
+}
+
+int main(int argc, char* argv[])
+{
+
+	int fd, fd_server, bytes_read;
 
 	if ((fd = open (IN_FIFO, O_RDONLY)) == -1)
 	   perror ("open");
 
 	while(1){
-
+		
 		memset (buf2, '\0', sizeof (buf2));
 
 		if ((bytes_read = read (fd, buf2, sizeof(buf2))) == -1)
 			perror ("read");
+		
+		if (bytes_read == 0)
+			continue;
+
 
 		if (bytes_read > 0) {
-
 			printf ("Message FIFO: %s\n", buf2);	
-
-			MQTTAsync_create(&client, ADDRESS, CLIENTID, MQTTCLIENT_PERSISTENCE_NONE, NULL);
-			MQTTAsync_setCallbacks(client, NULL, connlost, NULL, NULL);
-
-			if ((rc = MQTTAsync_connect(client, &conn_opts)) != MQTTASYNC_SUCCESS){
-				printf("Failed to start connect, return code %d\n", rc);
-				exit(EXIT_FAILURE);
-			}
-
-			printf("Waiting for publication of %s\n"
-				 "on topic %s for client with ClientID: %s\n",
-				 buf2, TOPIC, CLIENTID);
-
-			while (!finished)
-				#if defined(WIN32)
-					Sleep(100);
-				#else
-					usleep(10000L);
-				#endif
-
+			MQ();		
 		}
-
-	MQTTAsync_destroy(&client);
+	
 	}
-
+	
 	if (close (fd) == -1) {
 	    perror ("close");
 	}
 
- 	return rc;
+ 	return 0;
 }
 
 /*

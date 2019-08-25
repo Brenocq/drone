@@ -130,66 +130,80 @@ void onConnect(void* context, MQTTAsync_successData* response)
 	}
 }
 
+int MQ()
+{
+	finished = 0;
+	MQTTAsync client;
+	MQTTAsync_connectOptions conn_opts = MQTTAsync_connectOptions_initializer;
+	int rc;
+
+	MQTTAsync_create(&client, ADDRESS, CLIENTID, MQTTCLIENT_PERSISTENCE_NONE, NULL);
+
+	MQTTAsync_setCallbacks(client, NULL, connlost, NULL, NULL);
+
+	conn_opts.keepAliveInterval = 20;
+	conn_opts.cleansession = 1;
+	conn_opts.onSuccess = onConnect;
+	conn_opts.onFailure = onConnectFailure;
+	conn_opts.context = client;
+
+	if ((rc = MQTTAsync_connect(client, &conn_opts)) != MQTTASYNC_SUCCESS)
+	{
+		printf("Failed to start connect, return code %d\n", rc);
+		exit(EXIT_FAILURE);
+	}else{
+		printf("delbem\n");	
+	}
+
+	printf("Waiting for publication of %s\n"
+         "on topic %s for client with ClientID: %s\n",
+         buf2, TOPIC, CLIENTID);
+	
+	while (!finished)
+	{
+		//printf("ta vendo \n");
+		#if defined(WIN32)
+			Sleep(100);
+		#else
+			usleep(10000L);
+		#endif
+	}
+
+	MQTTAsync_destroy(&client);
+ 	return rc;
+}
 
 int main(int argc, char* argv[])
 {
-	int rc;
 
-		MQTTAsync client;
-		MQTTAsync_connectOptions conn_opts = MQTTAsync_connectOptions_initializer;
+	int fd, fd_server, bytes_read;
 
-		int fd, fd_server, bytes_read;
-
-		MQTTAsync_create(&client, ADDRESS, CLIENTID, MQTTCLIENT_PERSISTENCE_NONE, NULL);
-
-		MQTTAsync_setCallbacks(client, NULL, connlost, NULL, NULL);
-
-		conn_opts.keepAliveInterval = 20;
-		conn_opts.cleansession = 1;
-		conn_opts.onSuccess = onConnect;
-		conn_opts.onFailure = onConnectFailure;
-		conn_opts.context = client;
+	if ((fd = open (IN_FIFO, O_RDONLY)) == -1)
+	   perror ("open");
 
 	while(1){
-
-		if ((fd = open (IN_FIFO, O_RDONLY)) == -1)
-		   perror ("open");
-
-
-		if ((bytes_read = read (fd, buf2, sizeof(buf2))) == -1)
-		    perror ("read");
+		
 		memset (buf2, '\0', sizeof (buf2));
 
-//	while(bytes_read > 0){
+		if ((bytes_read = read (fd, buf2, sizeof(buf2))) == -1)
+			perror ("read");
 		
+		if (bytes_read == 0)
+			continue;
+
+
 		if (bytes_read > 0) {
-		    printf ("Answer: %s\n", buf2);
-		
-		if ((rc = MQTTAsync_connect(client, &conn_opts)) != MQTTASYNC_SUCCESS){
-			printf("Failed to start connect, return code %d\n", rc);
-			exit(EXIT_FAILURE);
+			printf ("Message FIFO: %s\n", buf2);	
+			MQ();		
 		}
-
-		printf("Waiting for publication of %s\n"
-		     "on topic %s for client with ClientID: %s\n",
-		     buf2, TOPIC, CLIENTID);
-
-		while (!finished)
-			#if defined(WIN32)
-				Sleep(100);
-			#else
-				usleep(10000L);
-			#endif
-		MQTTAsync_destroy(&client);
-
-		}
+	
 	}
-
+	
 	if (close (fd) == -1) {
 	    perror ("close");
 	}
-//		}
- 	return rc;
+
+ 	return 0;
 }
 
 /*
